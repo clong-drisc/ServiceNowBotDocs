@@ -7,6 +7,7 @@ Primary use: Copilot Studio knowledge source.
 
 
 **License and Attribution**
+
 This repository includes selected documentation derived from the public ServiceNowDocs repository.
 The original content is © ServiceNow and is made available under the Apache License, Version 2.0.
 This repository retains the original license and copyright notice as required.
