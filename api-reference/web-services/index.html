@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>web-services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>web-services</h1>
+    <ul>
+        <li><a href="../index.html">⬅ Back</a></li>
+<li>📄 <a href="LongRunningSOAPRequestProps.md">LongRunningSOAPRequestProps.md</a></li>
+<li>📄 <a href="add-client-ext-pt-base-code-ui-script.md">add-client-ext-pt-base-code-ui-script.md</a></li>
+<li>📄 <a href="add-scripted-ext-pt-base-script-include.md">add-scripted-ext-pt-base-script-include.md</a></li>
+<li>📄 <a href="additional-integration-resources.md">additional-integration-resources.md</a></li>
+<li>📄 <a href="api-analytics-properties.md">api-analytics-properties.md</a></li>
+<li>📄 <a href="api-analytics-whitelist-domain.md">api-analytics-whitelist-domain.md</a></li>
+<li>📄 <a href="build-graphql-scripted-schema.md">build-graphql-scripted-schema.md</a></li>
+<li>📄 <a href="c_APIAnalytics.md">c_APIAnalytics.md</a></li>
+<li>📄 <a href="c_APIAnalyticsCollectClean.md">c_APIAnalyticsCollectClean.md</a></li>
+<li>📄 <a href="c_APIAnalyticsReports.md">c_APIAnalyticsReports.md</a></li>
+<li>📄 <a href="c_ActionParameters.md">c_ActionParameters.md</a></li>
+<li>📄 <a href="c_BasicAuthentication.md">c_BasicAuthentication.md</a></li>
+<li>📄 <a href="c_CSharpNETEndEnd.md">c_CSharpNETEndEnd.md</a></li>
+<li>📄 <a href="c_CallAWebServiceInVisualStudioNET.md">c_CallAWebServiceInVisualStudioNET.md</a></li>
+<li>📄 <a href="c_ConnectivityDetails.md">c_ConnectivityDetails.md</a></li>
+<li>📄 <a href="c_DataModificationAPI.md">c_DataModificationAPI.md</a></li>
+<li>📄 <a href="c_DataRetrievalAPI.md">c_DataRetrievalAPI.md</a></li>
+<li>📄 <a href="c_DebuggingIncomingSOAPEnvelope.md">c_DebuggingIncomingSOAPEnvelope.md</a></li>
+<li>📄 <a href="c_DirectWebServices.md">c_DirectWebServices.md</a></li>
+<li>📄 <a href="c_EnablingHTTPCompression.md">c_EnablingHTTPCompression.md</a></li>
+<li>📄 <a href="c_FormattingResults.md">c_FormattingResults.md</a></li>
+<li>📄 <a href="c_GettingStartedWithODBC.md">c_GettingStartedWithODBC.md</a></li>
+<li>📄 <a href="c_InboundWebServiceExamples.md">c_InboundWebServiceExamples.md</a></li>
+<li>📄 <a href="c_InstallingTheODBCDriver.md">c_InstallingTheODBCDriver.md</a></li>
+<li>📄 <a href="c_JAAWbSrvcsClntEx.md">c_JAAWbSrvcsClntEx.md</a></li>
+<li>📄 <a href="c_JAAWbSrvcsClntExAdv.md">c_JAAWbSrvcsClntExAdv.md</a></li>
+<li>📄 <a href="c_JAAWbSrvcsClntExInst.md">c_JAAWbSrvcsClntExInst.md</a></li>
+<li>📄 <a href="c_JAAWbSrvcsClntExUpdt.md">c_JAAWbSrvcsClntExUpdt.md</a></li>
+<li>📄 <a href="c_JSONObjectFormat.md">c_JSONObjectFormat.md</a></li>
+<li>📄 <a href="c_JSONv2WebService.md">c_JSONv2WebService.md</a></li>
+<li>📄 <a href="c_LimitingResultsWithAView.md">c_LimitingResultsWithAView.md</a></li>
+<li>📄 <a href="c_MS.NETWebServicesClientExamples.md">c_MS.NETWebServicesClientExamples.md</a></li>
+<li>📄 <a href="c_OAuth2ProfileTutorialGoogle.md">c_OAuth2ProfileTutorialGoogle.md</a></li>
+<li>📄 <a href="c_OAuthProviderAndScope.md">c_OAuthProviderAndScope.md</a></li>
+<li>📄 <a href="c_ODBCDriver.md">c_ODBCDriver.md</a></li>
+<li>📄 <a href="c_ODBCDrvrSQL20082012.md">c_ODBCDrvrSQL20082012.md</a></li>
+<li>📄 <a href="c_OutboundRESTAuth.md">c_OutboundRESTAuth.md</a></li>
+<li>📄 <a href="c_OutboundRESTMIDServerSupport.md">c_OutboundRESTMIDServerSupport.md</a></li>
+<li>📄 <a href="c_OutboundRESTMutualAuthentication.md">c_OutboundRESTMutualAuthentication.md</a></li>
+<li>📄 <a href="c_OutboundRESTWebService.md">c_OutboundRESTWebService.md</a></li>
+<li>📄 <a href="c_OutboundSOAPSecurity.md">c_OutboundSOAPSecurity.md</a></li>
+<li>📄 <a href="c_OutboundSOAPWebService.md">c_OutboundSOAPWebService.md</a></li>
+<li>📄 <a href="c_OutboundWebServicesMutualAuth.md">c_OutboundWebServicesMutualAuth.md</a></li>
+<li>📄 <a href="c_OverridingTheRSSTitle.md">c_OverridingTheRSSTitle.md</a></li>
+<li>📄 <a href="c_OverridingTheSOAPEndpoint.md">c_OverridingTheSOAPEndpoint.md</a></li>
+<li>📄 <a href="c_PerlWebServicesClientExamples.md">c_PerlWebServicesClientExamples.md</a></li>
+<li>📄 <a href="c_PreventEmptyElementSOAPMsgs.md">c_PreventEmptyElementSOAPMsgs.md</a></li>
+<li>📄 <a href="c_PythonWebServicesClientExamples.md">c_PythonWebServicesClientExamples.md</a></li>
+<li>📄 <a href="c_RSSFeedGenerator.md">c_RSSFeedGenerator.md</a></li>
+<li>📄 <a href="c_RSSFeedReader.md">c_RSSFeedReader.md</a></li>
+<li>📄 <a href="c_RSSFeedReaderExample.md">c_RSSFeedReaderExample.md</a></li>
+<li>📄 <a href="c_ReqBasicAuthIncomJSONv2Requ.md">c_ReqBasicAuthIncomJSONv2Requ.md</a></li>
+<li>📄 <a href="c_ResponseStatus.md">c_ResponseStatus.md</a></li>
+<li>📄 <a href="c_Results.md">c_Results.md</a></li>
+<li>📄 <a href="c_RtvLrgNmbrRcrdSOAP.md">c_RtvLrgNmbrRcrdSOAP.md</a></li>
+<li>📄 <a href="c_SOAPMessage.md">c_SOAPMessage.md</a></li>
+<li>📄 <a href="c_SOAPMessageFunctions.md">c_SOAPMessageFunctions.md</a></li>
+<li>📄 <a href="c_SOAPStrategies.md">c_SOAPStrategies.md</a></li>
+<li>📄 <a href="c_SOAPWebService.md">c_SOAPWebService.md</a></li>
+<li>📄 <a href="c_SampleASPScriptUnencryptedSSO.md">c_SampleASPScriptUnencryptedSSO.md</a></li>
+<li>📄 <a href="c_ScriptedWebServices.md">c_ScriptedWebServices.md</a></li>
+<li>📄 <a href="c_ScriptingOutboundREST.md">c_ScriptingOutboundREST.md</a></li>
+<li>📄 <a href="c_SendSOAPMsgMIDServer.md">c_SendSOAPMsgMIDServer.md</a></li>
+<li>📄 <a href="c_SettingTheNumberOfRowsReturned.md">c_SettingTheNumberOfRowsReturned.md</a></li>
+<li>📄 <a href="c_SourceCode.md">c_SourceCode.md</a></li>
+<li>📄 <a href="c_TestTheSOAPMessage.md">c_TestTheSOAPMessage.md</a></li>
+<li>📄 <a href="c_TestingMethods.md">c_TestingMethods.md</a></li>
+<li>📄 <a href="c_Troubleshoot.md">c_Troubleshoot.md</a></li>
+<li>📄 <a href="c_UseASOAPMessageInAScript.md">c_UseASOAPMessageInAScript.md</a></li>
+<li>📄 <a href="c_UseAServiceReference.md">c_UseAServiceReference.md</a></li>
+<li>📄 <a href="c_UseAWebReference.md">c_UseAWebReference.md</a></li>
+<li>📄 <a href="c_UsingSpecialCharactersInURIs.md">c_UsingSpecialCharactersInURIs.md</a></li>
+<li>📄 <a href="c_VariableSubstitutionREST.md">c_VariableSubstitutionREST.md</a></li>
+<li>📄 <a href="c_VariableSubstitutionSOAP.md">c_VariableSubstitutionSOAP.md</a></li>
+<li>📄 <a href="clearing-values-target.md">clearing-values-target.md</a></li>
+<li>📄 <a href="client-extension-points.md">client-extension-points.md</a></li>
+<li>📄 <a href="configure-odbc-large-data-sets.md">configure-odbc-large-data-sets.md</a></li>
+<li>📄 <a href="configure-odbc-proxy-servers.md">configure-odbc-proxy-servers.md</a></li>
+<li>📄 <a href="configuring-odbc.md">configuring-odbc.md</a></li>
+<li>📄 <a href="create-client-ext-pt.md">create-client-ext-pt.md</a></li>
+<li>📄 <a href="create-scripted-ext-pt.md">create-scripted-ext-pt.md</a></li>
+<li>📄 <a href="create-soap-msg-external-xsd.md">create-soap-msg-external-xsd.md</a></li>
+<li>📄 <a href="createSOAPwebservice.md">createSOAPwebservice.md</a></li>
+<li>📄 <a href="createSOAPwebserviceStaticWSDL.md">createSOAPwebserviceStaticWSDL.md</a></li>
+<li>📄 <a href="domain-separation-odbc-driver.md">domain-separation-odbc-driver.md</a></li>
+<li>📄 <a href="domain-separation-web-services.md">domain-separation-web-services.md</a></li>
+<li>📄 <a href="enable-introspective-queries-graphql-schemas.md">enable-introspective-queries-graphql-schemas.md</a></li>
+<li>📄 <a href="extension-points.md">extension-points.md</a></li>
+<li>📄 <a href="graphql-properties.md">graphql-properties.md</a></li>
+<li>📄 <a href="impl-client-ext-pts-base-code.md">impl-client-ext-pts-base-code.md</a></li>
+<li>📄 <a href="impl-scripted-ext-pts-base-code.md">impl-scripted-ext-pts-base-code.md</a></li>
+<li>📄 <a href="impl-ui-ext-pts-base-code.md">impl-ui-ext-pts-base-code.md</a></li>
+<li>📄 <a href="implementing-ui-ext-pts-custom-code.md">implementing-ui-ext-pts-custom-code.md</a></li>
+<li>📄 <a href="inbound-web-services.md">inbound-web-services.md</a></li>
+<li>📄 <a href="install-incremental-odbc-fixes.md">install-incremental-odbc-fixes.md</a></li>
+<li>📄 <a href="odbc-troubleshooting.md">odbc-troubleshooting.md</a></li>
+<li>📄 <a href="outbound-logging-configure.md">outbound-logging-configure.md</a></li>
+<li>📄 <a href="outbound-logging-list-reqs.md">outbound-logging-list-reqs.md</a></li>
+<li>📄 <a href="outbound-logging-properties.md">outbound-logging-properties.md</a></li>
+<li>📄 <a href="outbound-request-logging.md">outbound-request-logging.md</a></li>
+<li>📄 <a href="outbound-web-services.md">outbound-web-services.md</a></li>
+<li>📄 <a href="p_RSS.md">p_RSS.md</a></li>
+<li>📄 <a href="persist-session-all-soap-calls.md">persist-session-all-soap-calls.md</a></li>
+<li>📄 <a href="query-schema-from-component.md">query-schema-from-component.md</a></li>
+<li>📄 <a href="r_ASPNETCSharpRdrctCks.md">r_ASPNETCSharpRdrctCks.md</a></li>
+<li>📄 <a href="r_Aggregate.md">r_Aggregate.md</a></li>
+<li>📄 <a href="r_AsyncronousSOAPMessageV2Example.md">r_AsyncronousSOAPMessageV2Example.md</a></li>
+<li>📄 <a href="r_AttachmentCreatorSOAPWebService.md">r_AttachmentCreatorSOAPWebService.md</a></li>
+<li>📄 <a href="r_AvailableWebServices.md">r_AvailableWebServices.md</a></li>
+<li>📄 <a href="r_BasicAuthenticationExamples.md">r_BasicAuthenticationExamples.md</a></li>
+<li>📄 <a href="r_ConfigureSOAPWithAProxy.md">r_ConfigureSOAPWithAProxy.md</a></li>
+<li>📄 <a href="r_DataModificationAPI.md">r_DataModificationAPI.md</a></li>
+<li>📄 <a href="r_DataRetrievalAPI.md">r_DataRetrievalAPI.md</a></li>
+<li>📄 <a href="r_DeleteMultiple.md">r_DeleteMultiple.md</a></li>
+<li>📄 <a href="r_DeleteRecord.md">r_DeleteRecord.md</a></li>
+<li>📄 <a href="r_DirectRESTMessageV2Example.md">r_DirectRESTMessageV2Example.md</a></li>
+<li>📄 <a href="r_DirectSOAPMessageV2Example.md">r_DirectSOAPMessageV2Example.md</a></li>
+<li>📄 <a href="r_DirectWebServiceAPIFunctions.md">r_DirectWebServiceAPIFunctions.md</a></li>
+<li>📄 <a href="r_FetchTheXMLData.md">r_FetchTheXMLData.md</a></li>
+<li>📄 <a href="r_Get.md">r_Get.md</a></li>
+<li>📄 <a href="r_GetKeys.md">r_GetKeys.md</a></li>
+<li>📄 <a href="r_GetRecords.md">r_GetRecords.md</a></li>
+<li>📄 <a href="r_HTTPClientConnectionManagement.md">r_HTTPClientConnectionManagement.md</a></li>
+<li>📄 <a href="r_HTTPConnectionManagementProps.md">r_HTTPConnectionManagementProps.md</a></li>
+<li>📄 <a href="r_HierarchicalSOAPMessage.md">r_HierarchicalSOAPMessage.md</a></li>
+<li>📄 <a href="r_Insert.md">r_Insert.md</a></li>
+<li>📄 <a href="r_InsertMultiple.md">r_InsertMultiple.md</a></li>
+<li>📄 <a href="r_InstallWEnhancedWSPCommPlugin.md">r_InstallWEnhancedWSPCommPlugin.md</a></li>
+<li>📄 <a href="r_LclDtaStorePullDta.md">r_LclDtaStorePullDta.md</a></li>
+<li>📄 <a href="r_MaxRowsReturned.md">r_MaxRowsReturned.md</a></li>
+<li>📄 <a href="r_ODBCAndClientApplications.md">r_ODBCAndClientApplications.md</a></li>
+<li>📄 <a href="r_ODBCBehavior.md">r_ODBCBehavior.md</a></li>
+<li>📄 <a href="r_ODBCDriverInstallationReqs.md">r_ODBCDriverInstallationReqs.md</a></li>
+<li>📄 <a href="r_ODBCSQLServerVideos.md">r_ODBCSQLServerVideos.md</a></li>
+<li>📄 <a href="r_OutboundSOAPVideoTutorial.md">r_OutboundSOAPVideoTutorial.md</a></li>
+<li>📄 <a href="r_Priority1IncidentsExample.md">r_Priority1IncidentsExample.md</a></li>
+<li>📄 <a href="r_RESTMessageElements.md">r_RESTMessageElements.md</a></li>
+<li>📄 <a href="r_RESTMessageV2MIDServerExample.md">r_RESTMessageV2MIDServerExample.md</a></li>
+<li>📄 <a href="r_RecordlessRESTMessageV2Example.md">r_RecordlessRESTMessageV2Example.md</a></li>
+<li>📄 <a href="r_RecordlessSOAPMessageV2Example.md">r_RecordlessSOAPMessageV2Example.md</a></li>
+<li>📄 <a href="r_SOAPMessageV2MIDServerExample.md">r_SOAPMessageV2MIDServerExample.md</a></li>
+<li>📄 <a href="r_SQLSupport.md">r_SQLSupport.md</a></li>
+<li>📄 <a href="r_ScriptingOutboundSOAP.md">r_ScriptingOutboundSOAP.md</a></li>
+<li>📄 <a href="r_ScrollableAreas.md">r_ScrollableAreas.md</a></li>
+<li>📄 <a href="r_SettingODBCProperties.md">r_SettingODBCProperties.md</a></li>
+<li>📄 <a href="r_SmplWSSecSOAPEnvHeader.md">r_SmplWSSecSOAPEnvHeader.md</a></li>
+<li>📄 <a href="r_StaticWSDLExample.md">r_StaticWSDLExample.md</a></li>
+<li>📄 <a href="r_StaticWSDLScriptInclude.md">r_StaticWSDLScriptInclude.md</a></li>
+<li>📄 <a href="r_StaticWSDLScriptedWebService.md">r_StaticWSDLScriptedWebService.md</a></li>
+<li>📄 <a href="r_Update.md">r_Update.md</a></li>
+<li>📄 <a href="r_UseFiltersLimitNumberOfResults.md">r_UseFiltersLimitNumberOfResults.md</a></li>
+<li>📄 <a href="r_UsingAStaticWSDL.md">r_UsingAStaticWSDL.md</a></li>
+<li>📄 <a href="r_WS-SecurityErrorMessages.md">r_WS-SecurityErrorMessages.md</a></li>
+<li>📄 <a href="r_WSDLSchemaWithRelatedRecords.md">r_WSDLSchemaWithRelatedRecords.md</a></li>
+<li>📄 <a href="retrieving-choice-fields-direct-ws.md">retrieving-choice-fields-direct-ws.md</a></li>
+<li>📄 <a href="retrieving-journal-entries.md">retrieving-journal-entries.md</a></li>
+<li>📄 <a href="return-display-reference-variables.md">return-display-reference-variables.md</a></li>
+<li>📄 <a href="scripted-extension-points.md">scripted-extension-points.md</a></li>
+<li>📄 <a href="scripted-graph-ql.md">scripted-graph-ql.md</a></li>
+<li>📄 <a href="soap-web-service-import-sets.md">soap-web-service-import-sets.md</a></li>
+<li>📄 <a href="specify-connection-string.md">specify-connection-string.md</a></li>
+<li>📄 <a href="store-retrieve-records-complex-data-type.md">store-retrieve-records-complex-data-type.md</a></li>
+<li>📄 <a href="t_ActivateEnhancedWSPPlugin.md">t_ActivateEnhancedWSPPlugin.md</a></li>
+<li>📄 <a href="t_AddingScrollingElementsInForms.md">t_AddingScrollingElementsInForms.md</a></li>
+<li>📄 <a href="t_BasicAuthentication.md">t_BasicAuthentication.md</a></li>
+<li>📄 <a href="t_CnfgLoggingLevel.md">t_CnfgLoggingLevel.md</a></li>
+<li>📄 <a href="t_ConfigureARESTMessageWithOAuth.md">t_ConfigureARESTMessageWithOAuth.md</a></li>
+<li>📄 <a href="t_ConfigureCSharpWith.NET.md">t_ConfigureCSharpWith.NET.md</a></li>
+<li>📄 <a href="t_ConfigureRESTMsgBasicAuth.md">t_ConfigureRESTMsgBasicAuth.md</a></li>
+<li>📄 <a href="t_ConfigureSOAPSecurity.md">t_ConfigureSOAPSecurity.md</a></li>
+<li>📄 <a href="t_ConfigureTheGlobalDSNDefault.md">t_ConfigureTheGlobalDSNDefault.md</a></li>
+<li>📄 <a href="t_ConfigureTheODBCDriver.md">t_ConfigureTheODBCDriver.md</a></li>
+<li>📄 <a href="t_ConfiguringARESTMessage.md">t_ConfiguringARESTMessage.md</a></li>
+<li>📄 <a href="t_ConfiguringSQLServer.md">t_ConfiguringSQLServer.md</a></li>
+<li>📄 <a href="t_CreateABasicAuthProfile.md">t_CreateABasicAuthProfile.md</a></li>
+<li>📄 <a href="t_CreateANewSecurityPolicy.md">t_CreateANewSecurityPolicy.md</a></li>
+<li>📄 <a href="t_CreateANewWS-SecurityProfile.md">t_CreateANewWS-SecurityProfile.md</a></li>
+<li>📄 <a href="t_CreateAProtocolProfile.md">t_CreateAProtocolProfile.md</a></li>
+<li>📄 <a href="t_CreateASOAPMessage.md">t_CreateASOAPMessage.md</a></li>
+<li>📄 <a href="t_CreateAStaticWSDL.md">t_CreateAStaticWSDL.md</a></li>
+<li>📄 <a href="t_CreateAStatickWSDLScriptInclude.md">t_CreateAStatickWSDLScriptInclude.md</a></li>
+<li>📄 <a href="t_CreateAnODBCUser.md">t_CreateAnODBCUser.md</a></li>
+<li>📄 <a href="t_CreateStaticWSDLScriptWebService.md">t_CreateStaticWSDLScriptWebService.md</a></li>
+<li>📄 <a href="t_CreatingANewDSN.md">t_CreatingANewDSN.md</a></li>
+<li>📄 <a href="t_CustomizeResponse.md">t_CustomizeResponse.md</a></li>
+<li>📄 <a href="t_DefineAnACLRuleForTheODBCRole.md">t_DefineAnACLRuleForTheODBCRole.md</a></li>
+<li>📄 <a href="t_DefineAnHTTPHeader.md">t_DefineAnHTTPHeader.md</a></li>
+<li>📄 <a href="t_DefineAnHTTPMethod.md">t_DefineAnHTTPMethod.md</a></li>
+<li>📄 <a href="t_DownloadAndInstallTheODBCDriver.md">t_DownloadAndInstallTheODBCDriver.md</a></li>
+<li>📄 <a href="t_EnableMutualAuth.md">t_EnableMutualAuth.md</a></li>
+<li>📄 <a href="t_EnableWS-SecurityVerification.md">t_EnableWS-SecurityVerification.md</a></li>
+<li>📄 <a href="t_EnforceStrictSecurityWebSvcConns.md">t_EnforceStrictSecurityWebSvcConns.md</a></li>
+<li>📄 <a href="t_GenerateDebugLogs.md">t_GenerateDebugLogs.md</a></li>
+<li>📄 <a href="t_GenerateMessageVariables.md">t_GenerateMessageVariables.md</a></li>
+<li>📄 <a href="t_IncreaseTheODBCOutputFieldSize.md">t_IncreaseTheODBCOutputFieldSize.md</a></li>
+<li>📄 <a href="t_InsertRelatedRecordsUsingSOAP.md">t_InsertRelatedRecordsUsingSOAP.md</a></li>
+<li>📄 <a href="t_MarkSvcAcctsAsInternalIntegUsers.md">t_MarkSvcAcctsAsInternalIntegUsers.md</a></li>
+<li>📄 <a href="t_OAuthDemoConfigureGoogle.md">t_OAuthDemoConfigureGoogle.md</a></li>
+<li>📄 <a href="t_OAuthDemoCreateProvider.md">t_OAuthDemoCreateProvider.md</a></li>
+<li>📄 <a href="t_OAuthDemoCreateRESTMessage.md">t_OAuthDemoCreateRESTMessage.md</a></li>
+<li>📄 <a href="t_ScriptingWithREST.md">t_ScriptingWithREST.md</a></li>
+<li>📄 <a href="t_SetTheSOAPDefaultSecurityPolicy.md">t_SetTheSOAPDefaultSecurityPolicy.md</a></li>
+<li>📄 <a href="t_SpecifyAnOAuthProfile.md">t_SpecifyAnOAuthProfile.md</a></li>
+<li>📄 <a href="t_SpecifyAnOAuthScope.md">t_SpecifyAnOAuthScope.md</a></li>
+<li>📄 <a href="t_SpecifyReqForSignedSOAPRequests.md">t_SpecifyReqForSignedSOAPRequests.md</a></li>
+<li>📄 <a href="t_TestingAQuery.md">t_TestingAQuery.md</a></li>
+<li>📄 <a href="t_TestingTheODBCDriver.md">t_TestingTheODBCDriver.md</a></li>
+<li>📄 <a href="t_UpgradingTheODBCDriver.md">t_UpgradingTheODBCDriver.md</a></li>
+<li>📄 <a href="t_UseAThirdPartyOAuthProvider.md">t_UseAThirdPartyOAuthProvider.md</a></li>
+<li>📄 <a href="t_UseODBCDriverCrysRpts.md">t_UseODBCDriverCrysRpts.md</a></li>
+<li>📄 <a href="t_UsingInteractiveSQLWithODBC.md">t_UsingInteractiveSQLWithODBC.md</a></li>
+<li>📄 <a href="t_UsingTheODBCDriverInExcel2010.md">t_UsingTheODBCDriverInExcel2010.md</a></li>
+<li>📄 <a href="t_ViewingASOAPSessionReport.md">t_ViewingASOAPSessionReport.md</a></li>
+<li>📄 <a href="t_WebServiceSecurity.md">t_WebServiceSecurity.md</a></li>
+<li>📄 <a href="test-gql-schema.md">test-gql-schema.md</a></li>
+<li>📄 <a href="ui-extension-points.md">ui-extension-points.md</a></li>
+<li>📄 <a href="using-forms-limit-extend-query-resp.md">using-forms-limit-extend-query-resp.md</a></li>
+<li>📄 <a href="ws-security-properties.md">ws-security-properties.md</a></li>
+<li>📄 <a href="ws-security-reference.md">ws-security-reference.md</a></li>
+    </ul>
+</body>
+</html>

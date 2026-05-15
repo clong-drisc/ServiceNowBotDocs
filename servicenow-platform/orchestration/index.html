@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>orchestration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>orchestration</h1>
+    <ul>
+        <li><a href="../index.html">⬅ Back</a></li>
+<li>📄 <a href="CreateInputVariables.md">CreateInputVariables.md</a></li>
+<li>📄 <a href="General-Flds-Templates.md">General-Flds-Templates.md</a></li>
+<li>📄 <a href="PreprocessFields.md">PreprocessFields.md</a></li>
+<li>📄 <a href="automap-output-variable-inputs.md">automap-output-variable-inputs.md</a></li>
+<li>📄 <a href="c_ActivityDesignerComponents.md">c_ActivityDesignerComponents.md</a></li>
+<li>📄 <a href="c_ActivityScoping.md">c_ActivityScoping.md</a></li>
+<li>📄 <a href="c_AzureADActivityPack.md">c_AzureADActivityPack.md</a></li>
+<li>📄 <a href="c_CSDExtensionFramework.md">c_CSDExtensionFramework.md</a></li>
+<li>📄 <a href="c_CSDFromAnSCCMHost.md">c_CSDFromAnSCCMHost.md</a></li>
+<li>📄 <a href="c_ClientSWDistValidProcess.md">c_ClientSWDistValidProcess.md</a></li>
+<li>📄 <a href="c_ClientSWDistributionDash.md">c_ClientSWDistributionDash.md</a></li>
+<li>📄 <a href="c_ClientSoftwareDistribution.md">c_ClientSoftwareDistribution.md</a></li>
+<li>📄 <a href="c_DataEncryptActivityVariables.md">c_DataEncryptActivityVariables.md</a></li>
+<li>📄 <a href="c_InfobloxDDIActivityPack.md">c_InfobloxDDIActivityPack.md</a></li>
+<li>📄 <a href="c_InfobloxDHCPActivities.md">c_InfobloxDHCPActivities.md</a></li>
+<li>📄 <a href="c_InfobloxDNSActivities.md">c_InfobloxDNSActivities.md</a></li>
+<li>📄 <a href="c_InfobloxIPAMActivities.md">c_InfobloxIPAMActivities.md</a></li>
+<li>📄 <a href="c_InfobloxNetworkActivities.md">c_InfobloxNetworkActivities.md</a></li>
+<li>📄 <a href="c_OrchActiveDirectoryActivities.md">c_OrchActiveDirectoryActivities.md</a></li>
+<li>📄 <a href="c_OrchExmplActiveDirUserMgmt.md">c_OrchExmplActiveDirUserMgmt.md</a></li>
+<li>📄 <a href="c_OrchF5LoadBalancerActivities.md">c_OrchF5LoadBalancerActivities.md</a></li>
+<li>📄 <a href="c_OrchestrPowerShellActivities.md">c_OrchestrPowerShellActivities.md</a></li>
+<li>📄 <a href="c_OrchestrPwrshellActivityPack.md">c_OrchestrPwrshellActivityPack.md</a></li>
+<li>📄 <a href="c_OrchestrationActivityPacks.md">c_OrchestrationActivityPacks.md</a></li>
+<li>📄 <a href="c_OrchestrationApplications.md">c_OrchestrationApplications.md</a></li>
+<li>📄 <a href="c_OrchestrationDatabus.md">c_OrchestrationDatabus.md</a></li>
+<li>📄 <a href="c_OrchestrationExamples.md">c_OrchestrationExamples.md</a></li>
+<li>📄 <a href="c_OrchestrationExchangeActivities.md">c_OrchestrationExchangeActivities.md</a></li>
+<li>📄 <a href="c_OrchestrationMID.md">c_OrchestrationMID.md</a></li>
+<li>📄 <a href="c_OrchestrationROI.md">c_OrchestrationROI.md</a></li>
+<li>📄 <a href="c_OrchestrationROIDashboards.md">c_OrchestrationROIDashboards.md</a></li>
+<li>📄 <a href="c_OrchestrationSFTPActivityPack.md">c_OrchestrationSFTPActivityPack.md</a></li>
+<li>📄 <a href="c_OrchestrationSSHActivities.md">c_OrchestrationSSHActivities.md</a></li>
+<li>📄 <a href="c_OrchestrationSSHCustomActivities.md">c_OrchestrationSSHCustomActivities.md</a></li>
+<li>📄 <a href="c_PowershellActivityDesigner.md">c_PowershellActivityDesigner.md</a></li>
+<li>📄 <a href="c_SCCMActivityPack.md">c_SCCMActivityPack.md</a></li>
+<li>📄 <a href="c_SCCMSoftwareRevocation.md">c_SCCMSoftwareRevocation.md</a></li>
+<li>📄 <a href="c_WorkflowActivityDesigner.md">c_WorkflowActivityDesigner.md</a></li>
+<li>📄 <a href="conditions.md">conditions.md</a></li>
+<li>📄 <a href="config-mid-sccm-activities.md">config-mid-sccm-activities.md</a></li>
+<li>📄 <a href="configuring-sccm.md">configuring-sccm.md</a></li>
+<li>📄 <a href="create-custom-activities.md">create-custom-activities.md</a></li>
+<li>📄 <a href="credentials-conn-alias-orch.md">credentials-conn-alias-orch.md</a></li>
+<li>📄 <a href="device-exists-sccm-collection.md">device-exists-sccm-collection.md</a></li>
+<li>📄 <a href="domain-separation-orchestration.md">domain-separation-orchestration.md</a></li>
+<li>📄 <a href="extend-software-lease.md">extend-software-lease.md</a></li>
+<li>📄 <a href="global-activity-pack.md">global-activity-pack.md</a></li>
+<li>📄 <a href="infoblox-roles-permissions.md">infoblox-roles-permissions.md</a></li>
+<li>📄 <a href="list-orchestration-plugins.md">list-orchestration-plugins.md</a></li>
+<li>📄 <a href="mid-server-capabilities.md">mid-server-capabilities.md</a></li>
+<li>📄 <a href="mid-server-powershell-files.md">mid-server-powershell-files.md</a></li>
+<li>📄 <a href="mid-server-selection-criteria.md">mid-server-selection-criteria.md</a></li>
+<li>📄 <a href="orchestration-runtime-plugin.md">orchestration-runtime-plugin.md</a></li>
+<li>📄 <a href="orchestration-usage-dashboard.md">orchestration-usage-dashboard.md</a></li>
+<li>📄 <a href="powershell-log-property.md">powershell-log-property.md</a></li>
+<li>📄 <a href="powershell-probe-v2.md">powershell-probe-v2.md</a></li>
+<li>📄 <a href="powershell-protocols.md">powershell-protocols.md</a></li>
+<li>📄 <a href="powershell-troubleshooting.md">powershell-troubleshooting.md</a></li>
+<li>📄 <a href="probe_activity-pack.md">probe_activity-pack.md</a></li>
+<li>📄 <a href="r-orchestration-introduction.md">r-orchestration-introduction.md</a></li>
+<li>📄 <a href="r-orchestration.md">r-orchestration.md</a></li>
+<li>📄 <a href="r_AddF5PoolActivity.md">r_AddF5PoolActivity.md</a></li>
+<li>📄 <a href="r_AddF5PoolMemberActivity.md">r_AddF5PoolMemberActivity.md</a></li>
+<li>📄 <a href="r_AddF5ProfileToVirtualServerActivity.md">r_AddF5ProfileToVirtualServerActivity.md</a></li>
+<li>📄 <a href="r_AddF5VirtualServerActivity.md">r_AddF5VirtualServerActivity.md</a></li>
+<li>📄 <a href="r_AddToDeviceCollectionActivity.md">r_AddToDeviceCollectionActivity.md</a></li>
+<li>📄 <a href="r_AddToUserCollectionActivity.md">r_AddToUserCollectionActivity.md</a></li>
+<li>📄 <a href="r_AddUserToGroupADActivity.md">r_AddUserToGroupADActivity.md</a></li>
+<li>📄 <a href="r_AddUserToGroupAzureADActivity.md">r_AddUserToGroupAzureADActivity.md</a></li>
+<li>📄 <a href="r_AssignUserLicenseAzureADActivity.md">r_AssignUserLicenseAzureADActivity.md</a></li>
+<li>📄 <a href="r_CSDExtensionKeys.md">r_CSDExtensionKeys.md</a></li>
+<li>📄 <a href="r_CSDExtensionPoints.md">r_CSDExtensionPoints.md</a></li>
+<li>📄 <a href="r_ChangeADUserPassword.md">r_ChangeADUserPassword.md</a></li>
+<li>📄 <a href="r_ChangeServiceState.md">r_ChangeServiceState.md</a></li>
+<li>📄 <a href="r_CheckF5PoolActivity.md">r_CheckF5PoolActivity.md</a></li>
+<li>📄 <a href="r_CopyFileActivity.md">r_CopyFileActivity.md</a></li>
+<li>📄 <a href="r_CreateADObject.md">r_CreateADObject.md</a></li>
+<li>📄 <a href="r_CreateAddressListActivity.md">r_CreateAddressListActivity.md</a></li>
+<li>📄 <a href="r_CreateDirectoryActivity.md">r_CreateDirectoryActivity.md</a></li>
+<li>📄 <a href="r_CreateMailboxActivity.md">r_CreateMailboxActivity.md</a></li>
+<li>📄 <a href="r_CreateUserAzureADActivity.md">r_CreateUserAzureADActivity.md</a></li>
+<li>📄 <a href="r_DeleteAddressListActivity.md">r_DeleteAddressListActivity.md</a></li>
+<li>📄 <a href="r_DeleteF5PoolActivity.md">r_DeleteF5PoolActivity.md</a></li>
+<li>📄 <a href="r_DeleteF5PoolMemberActivity.md">r_DeleteF5PoolMemberActivity.md</a></li>
+<li>📄 <a href="r_DeleteF5VirtualServerActivity.md">r_DeleteF5VirtualServerActivity.md</a></li>
+<li>📄 <a href="r_DeleteMailboxActivity.md">r_DeleteMailboxActivity.md</a></li>
+<li>📄 <a href="r_DeleteUserAzureADActivity.md">r_DeleteUserAzureADActivity.md</a></li>
+<li>📄 <a href="r_DisableADUserAccount.md">r_DisableADUserAccount.md</a></li>
+<li>📄 <a href="r_DisableMailboxActivity.md">r_DisableMailboxActivity.md</a></li>
+<li>📄 <a href="r_EnableADUserAccount.md">r_EnableADUserAccount.md</a></li>
+<li>📄 <a href="r_EnableMailboxActivity.md">r_EnableMailboxActivity.md</a></li>
+<li>📄 <a href="r_FileCopyActivity.md">r_FileCopyActivity.md</a></li>
+<li>📄 <a href="r_FileReadActivity.md">r_FileReadActivity.md</a></li>
+<li>📄 <a href="r_FileReplaceStringActivity.md">r_FileReplaceStringActivity.md</a></li>
+<li>📄 <a href="r_FileWriteActivity.md">r_FileWriteActivity.md</a></li>
+<li>📄 <a href="r_FilesCompareActivity.md">r_FilesCompareActivity.md</a></li>
+<li>📄 <a href="r_GetAddressListActivity.md">r_GetAddressListActivity.md</a></li>
+<li>📄 <a href="r_GetApplicationsActivity.md">r_GetApplicationsActivity.md</a></li>
+<li>📄 <a href="r_GetDeploymentsActivity.md">r_GetDeploymentsActivity.md</a></li>
+<li>📄 <a href="r_GetDeviceCollectionsActivity.md">r_GetDeviceCollectionsActivity.md</a></li>
+<li>📄 <a href="r_GetF5PoolMemberActivity.md">r_GetF5PoolMemberActivity.md</a></li>
+<li>📄 <a href="r_GetFileListActivity.md">r_GetFileListActivity.md</a></li>
+<li>📄 <a href="r_GetMailboxActivity.md">r_GetMailboxActivity.md</a></li>
+<li>📄 <a href="r_GetUserCollectionsActivity.md">r_GetUserCollectionsActivity.md</a></li>
+<li>📄 <a href="r_GetUserInfoAzureADActivity.md">r_GetUserInfoAzureADActivity.md</a></li>
+<li>📄 <a href="r_IWClientSWDist.md">r_IWClientSWDist.md</a></li>
+<li>📄 <a href="r_InfobloxWorkflows.md">r_InfobloxWorkflows.md</a></li>
+<li>📄 <a href="r_InstallWindowsAppActivity.md">r_InstallWindowsAppActivity.md</a></li>
+<li>📄 <a href="r_InstalledWithOrchestrationROI.md">r_InstalledWithOrchestrationROI.md</a></li>
+<li>📄 <a href="r_IsADAccountLocked.md">r_IsADAccountLocked.md</a></li>
+<li>📄 <a href="r_JoinDomainActivity.md">r_JoinDomainActivity.md</a></li>
+<li>📄 <a href="r_ListOfOrchestrationActivities.md">r_ListOfOrchestrationActivities.md</a></li>
+<li>📄 <a href="r_ModifyF5VirtualServerActivity.md">r_ModifyF5VirtualServerActivity.md</a></li>
+<li>📄 <a href="r_MoveAddressListActivity.md">r_MoveAddressListActivity.md</a></li>
+<li>📄 <a href="r_OrchestrationBasicActivities.md">r_OrchestrationBasicActivities.md</a></li>
+<li>📄 <a href="r_OrchestrationProbes.md">r_OrchestrationProbes.md</a></li>
+<li>📄 <a href="r_OrchestrationROIPremiumDashboard.md">r_OrchestrationROIPremiumDashboard.md</a></li>
+<li>📄 <a href="r_OrchestrationROIStandardDashboard.md">r_OrchestrationROIStandardDashboard.md</a></li>
+<li>📄 <a href="r_QueryAD.md">r_QueryAD.md</a></li>
+<li>📄 <a href="r_RemoveADObject.md">r_RemoveADObject.md</a></li>
+<li>📄 <a href="r_RemoveFileOrDirectoryActivity.md">r_RemoveFileOrDirectoryActivity.md</a></li>
+<li>📄 <a href="r_RemoveFmDevicCollectionActivity.md">r_RemoveFmDevicCollectionActivity.md</a></li>
+<li>📄 <a href="r_RemoveFromUserCollectionActivity.md">r_RemoveFromUserCollectionActivity.md</a></li>
+<li>📄 <a href="r_RemoveUserFromGroupADActivity.md">r_RemoveUserFromGroupADActivity.md</a></li>
+<li>📄 <a href="r_RemoveUserFromGroupAzureActivity.md">r_RemoveUserFromGroupAzureActivity.md</a></li>
+<li>📄 <a href="r_RemoveUserLicenseAzureADActivity.md">r_RemoveUserLicenseAzureADActivity.md</a></li>
+<li>📄 <a href="r_RenameFileOrDirectoryActivity.md">r_RenameFileOrDirectoryActivity.md</a></li>
+<li>📄 <a href="r_ResetADUserPassword.md">r_ResetADUserPassword.md</a></li>
+<li>📄 <a href="r_ResetLinuxUserPasswordActivity.md">r_ResetLinuxUserPasswordActivity.md</a></li>
+<li>📄 <a href="r_ResetUserPasswordAzureADActivity.md">r_ResetUserPasswordAzureADActivity.md</a></li>
+<li>📄 <a href="r_RestartWindowsServerActivity.md">r_RestartWindowsServerActivity.md</a></li>
+<li>📄 <a href="r_SCCMDeploymentProcessWorkflow.md">r_SCCMDeploymentProcessWorkflow.md</a></li>
+<li>📄 <a href="r_SFTPWorkflow.md">r_SFTPWorkflow.md</a></li>
+<li>📄 <a href="r_SOAPMessageActivity.md">r_SOAPMessageActivity.md</a></li>
+<li>📄 <a href="r_SOAPTemplateExecutionParams.md">r_SOAPTemplateExecutionParams.md</a></li>
+<li>📄 <a href="r_STPstPPrm.md">r_STPstPPrm.md</a></li>
+<li>📄 <a href="r_SecureCopyActivity.md">r_SecureCopyActivity.md</a></li>
+<li>📄 <a href="r_SetAddressListActivity.md">r_SetAddressListActivity.md</a></li>
+<li>📄 <a href="r_SetFileAttributesActivity.md">r_SetFileAttributesActivity.md</a></li>
+<li>📄 <a href="r_SetMailboxActivity.md">r_SetMailboxActivity.md</a></li>
+<li>📄 <a href="r_UninstallWindowsAppActivity.md">r_UninstallWindowsAppActivity.md</a></li>
+<li>📄 <a href="r_UnlockADAccount.md">r_UnlockADAccount.md</a></li>
+<li>📄 <a href="r_UpdateADObject.md">r_UpdateADObject.md</a></li>
+<li>📄 <a href="r_UpdateAddressListActivity.md">r_UpdateAddressListActivity.md</a></li>
+<li>📄 <a href="t-config-SCCM-deployment-manager.md">t-config-SCCM-deployment-manager.md</a></li>
+<li>📄 <a href="t-update-sccm-cmdlet-libraries.md">t-update-sccm-cmdlet-libraries.md</a></li>
+<li>📄 <a href="t_ActivateAnActivityPack.md">t_ActivateAnActivityPack.md</a></li>
+<li>📄 <a href="t_ActivateClientSWDistribution.md">t_ActivateClientSWDistribution.md</a></li>
+<li>📄 <a href="t_ActivateOrchestration.md">t_ActivateOrchestration.md</a></li>
+<li>📄 <a href="t_ActivateSysCentrConfigMgrActiv.md">t_ActivateSysCentrConfigMgrActiv.md</a></li>
+<li>📄 <a href="t_AutoMapSOAPActivOutputVarble.md">t_AutoMapSOAPActivOutputVarble.md</a></li>
+<li>📄 <a href="t_ConfigCSDProviders.md">t_ConfigCSDProviders.md</a></li>
+<li>📄 <a href="t_ConfigTimeOrchROICalc.md">t_ConfigTimeOrchROICalc.md</a></li>
+<li>📄 <a href="t_ConfigureMIDServerForExchange.md">t_ConfigureMIDServerForExchange.md</a></li>
+<li>📄 <a href="t_ConfigureSCCMCollections.md">t_ConfigureSCCMCollections.md</a></li>
+<li>📄 <a href="t_CopyACustomActivity.md">t_CopyACustomActivity.md</a></li>
+<li>📄 <a href="t_CreateAJDBCActivity.md">t_CreateAJDBCActivity.md</a></li>
+<li>📄 <a href="t_CreateAJMSActivity.md">t_CreateAJMSActivity.md</a></li>
+<li>📄 <a href="t_CreateAJavaScriptProbeActivity.md">t_CreateAJavaScriptProbeActivity.md</a></li>
+<li>📄 <a href="t_CreateAParsingRule.md">t_CreateAParsingRule.md</a></li>
+<li>📄 <a href="t_CreateAPowershellActivity.md">t_CreateAPowershellActivity.md</a></li>
+<li>📄 <a href="t_CreateAProbeActivity.md">t_CreateAProbeActivity.md</a></li>
+<li>📄 <a href="t_CreateARESTWebServiceActivity.md">t_CreateARESTWebServiceActivity.md</a></li>
+<li>📄 <a href="t_CreateARunScriptActivity.md">t_CreateARunScriptActivity.md</a></li>
+<li>📄 <a href="t_CreateASOAPWebServiceActivity.md">t_CreateASOAPWebServiceActivity.md</a></li>
+<li>📄 <a href="t_CreateAnOutputVariable.md">t_CreateAnOutputVariable.md</a></li>
+<li>📄 <a href="t_CreateAnSFTPActivity.md">t_CreateAnSFTPActivity.md</a></li>
+<li>📄 <a href="t_CreateAnSSHActivity.md">t_CreateAnSSHActivity.md</a></li>
+<li>📄 <a href="t_CreateCatItemSCCMApp.md">t_CreateCatItemSCCMApp.md</a></li>
+<li>📄 <a href="t_CreateLicsAndCountsForDistSW.md">t_CreateLicsAndCountsForDistSW.md</a></li>
+<li>📄 <a href="t_CreateOrchROIAutoEntryRecord.md">t_CreateOrchROIAutoEntryRecord.md</a></li>
+<li>📄 <a href="t_CreateOrchROICorrTaskRule.md">t_CreateOrchROICorrTaskRule.md</a></li>
+<li>📄 <a href="t_CreateOrchROILaborRateCard.md">t_CreateOrchROILaborRateCard.md</a></li>
+<li>📄 <a href="t_CreateRESTCredRecInfoBloxAct.md">t_CreateRESTCredRecInfoBloxAct.md</a></li>
+<li>📄 <a href="t_CreateSWModelSCCMApp.md">t_CreateSWModelSCCMApp.md</a></li>
+<li>📄 <a href="t_CreateWinCredSCCM.md">t_CreateWinCredSCCM.md</a></li>
+<li>📄 <a href="t_CrtJvScrArrSTemplate.md">t_CrtJvScrArrSTemplate.md</a></li>
+<li>📄 <a href="t_MapSOAPVariablesToExecutionComm.md">t_MapSOAPVariablesToExecutionComm.md</a></li>
+<li>📄 <a href="t_PassMultivaluedProperties.md">t_PassMultivaluedProperties.md</a></li>
+<li>📄 <a href="t_PublishACustomActivity.md">t_PublishACustomActivity.md</a></li>
+<li>📄 <a href="t_ReactivateDeprecatedActivity.md">t_ReactivateDeprecatedActivity.md</a></li>
+<li>📄 <a href="t_RetrieveSCCMDataClientSWDist.md">t_RetrieveSCCMDataClientSWDist.md</a></li>
+<li>📄 <a href="t_UseAnActivityDesignerPack.md">t_UseAnActivityDesignerPack.md</a></li>
+<li>📄 <a href="template-post-process-field.md">template-post-process-field.md</a></li>
+<li>📄 <a href="user-exists-sccm-collection.md">user-exists-sccm-collection.md</a></li>
+    </ul>
+</body>
+</html>

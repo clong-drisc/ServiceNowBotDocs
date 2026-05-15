@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>cloud-configuration-governance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>cloud-configuration-governance</h1>
+    <ul>
+        <li><a href="../index.html">⬅ Back</a></li>
+<li>📄 <a href="IPAM-integration.md">IPAM-integration.md</a></li>
+<li>📄 <a href="add-cloud-account-cloud-mgt.md">add-cloud-account-cloud-mgt.md</a></li>
+<li>📄 <a href="add-credential-to-template-type.md">add-credential-to-template-type.md</a></li>
+<li>📄 <a href="add-datacntr-to-cloud-acct.md">add-datacntr-to-cloud-acct.md</a></li>
+<li>📄 <a href="add-fields-control-order-blueprint.md">add-fields-control-order-blueprint.md</a></li>
+<li>📄 <a href="add-op-to-resource-for-wrkflw.md">add-op-to-resource-for-wrkflw.md</a></li>
+<li>📄 <a href="add-operation-steps.md">add-operation-steps.md</a></li>
+<li>📄 <a href="add-postprov-example-subflows.md">add-postprov-example-subflows.md</a></li>
+<li>📄 <a href="add-postprov-example.md">add-postprov-example.md</a></li>
+<li>📄 <a href="add-public-image-aws.md">add-public-image-aws.md</a></li>
+<li>📄 <a href="add-public-image-azure.md">add-public-image-azure.md</a></li>
+<li>📄 <a href="add-resource-op-step-invoke-wrkflw.md">add-resource-op-step-invoke-wrkflw.md</a></li>
+<li>📄 <a href="add-resource-op-step-subflow.md">add-resource-op-step-subflow.md</a></li>
+<li>📄 <a href="add-resource-operation-cmp.md">add-resource-operation-cmp.md</a></li>
+<li>📄 <a href="add-resource-script-resource-block.md">add-resource-script-resource-block.md</a></li>
+<li>📄 <a href="add-tag-for-policy.md">add-tag-for-policy.md</a></li>
+<li>📄 <a href="add-terraform-orchestration-interface.md">add-terraform-orchestration-interface.md</a></li>
+<li>📄 <a href="analyze-default-blueprint-rules.md">analyze-default-blueprint-rules.md</a></li>
+<li>📄 <a href="associate-terraform-variable-with-datacenter-resource-block.md">associate-terraform-variable-with-datacenter-resource-block.md</a></li>
+<li>📄 <a href="aws-add-service-account-cloud-mgt.md">aws-add-service-account-cloud-mgt.md</a></li>
+<li>📄 <a href="aws-assign-roles-cloud-mgt.md">aws-assign-roles-cloud-mgt.md</a></li>
+<li>📄 <a href="aws-bill-dwnld-sched-cloud-mgt.md">aws-bill-dwnld-sched-cloud-mgt.md</a></li>
+<li>📄 <a href="aws-billing-pagesize-cloud-mgt.md">aws-billing-pagesize-cloud-mgt.md</a></li>
+<li>📄 <a href="aws-discovered-services.md">aws-discovered-services.md</a></li>
+<li>📄 <a href="aws-ec2-sample-cloudformation-json.md">aws-ec2-sample-cloudformation-json.md</a></li>
+<li>📄 <a href="aws-first-cld-and-srvc-accts.md">aws-first-cld-and-srvc-accts.md</a></li>
+<li>📄 <a href="aws-govcloud-creds-cloud-mgt.md">aws-govcloud-creds-cloud-mgt.md</a></li>
+<li>📄 <a href="aws-govcloud-srv-acct-cloud-mgt.md">aws-govcloud-srv-acct-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-assign-roles-cloud-mgt.md">azure-assign-roles-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-bill-dwnld-sched-cloud-mgt.md">azure-bill-dwnld-sched-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-billing-pagesize-cloud-mgt.md">azure-billing-pagesize-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-cloud-accts-cloud-mgt.md">azure-cloud-accts-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-create-creds-cloud-mgt.md">azure-create-creds-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-create-serv-princ-cloud-mgt.md">azure-create-serv-princ-cloud-mgt.md</a></li>
+<li>📄 <a href="azure-discovered-services.md">azure-discovered-services.md</a></li>
+<li>📄 <a href="azure-service-account-cloud-mgt.md">azure-service-account-cloud-mgt.md</a></li>
+<li>📄 <a href="bind-param-snpool.md">bind-param-snpool.md</a></li>
+<li>📄 <a href="blueprint-attributes.md">blueprint-attributes.md</a></li>
+<li>📄 <a href="blueprint-form-configuration.md">blueprint-form-configuration.md</a></li>
+<li>📄 <a href="blueprints.md">blueprints.md</a></li>
+<li>📄 <a href="business-hours-scheduling.md">business-hours-scheduling.md</a></li>
+<li>📄 <a href="catalog-item-from-blueprint-cmp.md">catalog-item-from-blueprint-cmp.md</a></li>
+<li>📄 <a href="catalog-item-terraform-template.md">catalog-item-terraform-template.md</a></li>
+<li>📄 <a href="ccg-terraform-connector-ssh-private-key-credential-form.md">ccg-terraform-connector-ssh-private-key-credential-form.md</a></li>
+<li>📄 <a href="ccg-terraform-connector-windows-credentials-form.md">ccg-terraform-connector-windows-credentials-form.md</a></li>
+<li>📄 <a href="cloud-accounts.md">cloud-accounts.md</a></li>
+<li>📄 <a href="cloud-admin-portal.md">cloud-admin-portal.md</a></li>
+<li>📄 <a href="cloud-api-trail.md">cloud-api-trail.md</a></li>
+<li>📄 <a href="cloud-configuration.md">cloud-configuration.md</a></li>
+<li>📄 <a href="cloud-dashboards.md">cloud-dashboards.md</a></li>
+<li>📄 <a href="cloud-governance.md">cloud-governance.md</a></li>
+<li>📄 <a href="cloud-management-api.md">cloud-management-api.md</a></li>
+<li>📄 <a href="cloud-management-v2-landing-page.md">cloud-management-v2-landing-page.md</a></li>
+<li>📄 <a href="cloud-mgmt-dom-sep-recommend.md">cloud-mgmt-dom-sep-recommend.md</a></li>
+<li>📄 <a href="cloud-mgmt-recipes-day-2.md">cloud-mgmt-recipes-day-2.md</a></li>
+<li>📄 <a href="cloud-mgt-aws-setup-day-1.md">cloud-mgt-aws-setup-day-1.md</a></li>
+<li>📄 <a href="cloud-mgt-azure-setup-guide.md">cloud-mgt-azure-setup-guide.md</a></li>
+<li>📄 <a href="cloud-mgt-gcp-setup-day-1.md">cloud-mgt-gcp-setup-day-1.md</a></li>
+<li>📄 <a href="cloud-mgt-general-setup-day-2.md">cloud-mgt-general-setup-day-2.md</a></li>
+<li>📄 <a href="cloud-mgt-table-schemas.md">cloud-mgt-table-schemas.md</a></li>
+<li>📄 <a href="cloud-mgt-vmware-setup-guide.md">cloud-mgt-vmware-setup-guide.md</a></li>
+<li>📄 <a href="cloud-orch-trail.md">cloud-orch-trail.md</a></li>
+<li>📄 <a href="cloud-permissions.md">cloud-permissions.md</a></li>
+<li>📄 <a href="cloud-policy.md">cloud-policy.md</a></li>
+<li>📄 <a href="cloud-resource-profiles.md">cloud-resource-profiles.md</a></li>
+<li>📄 <a href="cloud-scripts-and-templates.md">cloud-scripts-and-templates.md</a></li>
+<li>📄 <a href="cloud-tagging.md">cloud-tagging.md</a></li>
+<li>📄 <a href="cloudmgmt-extend-stack-lease.md">cloudmgmt-extend-stack-lease.md</a></li>
+<li>📄 <a href="cloudmgmt-modify-business-schedule.md">cloudmgmt-modify-business-schedule.md</a></li>
+<li>📄 <a href="cloudmgt-cloud-user-portal.md">cloudmgt-cloud-user-portal.md</a></li>
+<li>📄 <a href="cloudmgt-create-ssh-key.md">cloudmgt-create-ssh-key.md</a></li>
+<li>📄 <a href="cloudmgt-download-ssh-key.md">cloudmgt-download-ssh-key.md</a></li>
+<li>📄 <a href="cloudmgt-launch-stack.md">cloudmgt-launch-stack.md</a></li>
+<li>📄 <a href="cloudmgt-lifecycle-operation.md">cloudmgt-lifecycle-operation.md</a></li>
+<li>📄 <a href="cloudmgt-manage-resources.md">cloudmgt-manage-resources.md</a></li>
+<li>📄 <a href="cloudmgt-manage-stacks.md">cloudmgt-manage-stacks.md</a></li>
+<li>📄 <a href="cloudmgt-search-portal.md">cloudmgt-search-portal.md</a></li>
+<li>📄 <a href="cloudmgt-submit-incident.md">cloudmgt-submit-incident.md</a></li>
+<li>📄 <a href="cloudmgt-track-change-request.md">cloudmgt-track-change-request.md</a></li>
+<li>📄 <a href="cloudmgt-track-incident.md">cloudmgt-track-incident.md</a></li>
+<li>📄 <a href="cloudmgt-track-stack-request.md">cloudmgt-track-stack-request.md</a></li>
+<li>📄 <a href="cloudmgt-user-activities.md">cloudmgt-user-activities.md</a></li>
+<li>📄 <a href="cloudmgt-view-cloud-events.md">cloudmgt-view-cloud-events.md</a></li>
+<li>📄 <a href="configure-a-blueprint-rule.md">configure-a-blueprint-rule.md</a></li>
+<li>📄 <a href="configure-ansible-creds.md">configure-ansible-creds.md</a></li>
+<li>📄 <a href="configure-cloud-policy-rule.md">configure-cloud-policy-rule.md</a></li>
+<li>📄 <a href="configure-cpg-terraform-connector.md">configure-cpg-terraform-connector.md</a></li>
+<li>📄 <a href="configure-custom-aws-member-role.md">configure-custom-aws-member-role.md</a></li>
+<li>📄 <a href="configure-endpoint-mapping-cmp.md">configure-endpoint-mapping-cmp.md</a></li>
+<li>📄 <a href="configure-response-processor.md">configure-response-processor.md</a></li>
+<li>📄 <a href="configure-ui-group.md">configure-ui-group.md</a></li>
+<li>📄 <a href="control-form-field-visibility.md">control-form-field-visibility.md</a></li>
+<li>📄 <a href="cpg-terraform-connector-api-key-credentials-form-reference.md">cpg-terraform-connector-api-key-credentials-form-reference.md</a></li>
+<li>📄 <a href="cpg-terraform-connector-catalog-item-task-form.md">cpg-terraform-connector-catalog-item-task-form.md</a></li>
+<li>📄 <a href="cpg-terraform-connector-config-provider-form.md">cpg-terraform-connector-config-provider-form.md</a></li>
+<li>📄 <a href="cpg-terraform-connector-landing-page.md">cpg-terraform-connector-landing-page.md</a></li>
+<li>📄 <a href="cpg-terraform-connector-reference.md">cpg-terraform-connector-reference.md</a></li>
+<li>📄 <a href="create-a-ci-class-cloud.md">create-a-ci-class-cloud.md</a></li>
+<li>📄 <a href="create-action-on-approval.md">create-action-on-approval.md</a></li>
+<li>📄 <a href="create-action-on-bp-provision.md">create-action-on-bp-provision.md</a></li>
+<li>📄 <a href="create-action-on-cat-item-launch.md">create-action-on-cat-item-launch.md</a></li>
+<li>📄 <a href="create-action-on-cat-item-request.md">create-action-on-cat-item-request.md</a></li>
+<li>📄 <a href="create-action-on-lease-end.md">create-action-on-lease-end.md</a></li>
+<li>📄 <a href="create-action-on-remediation.md">create-action-on-remediation.md</a></li>
+<li>📄 <a href="create-action-on-resource-limits-exceeded.md">create-action-on-resource-limits-exceeded.md</a></li>
+<li>📄 <a href="create-action-on-resource-op.md">create-action-on-resource-op.md</a></li>
+<li>📄 <a href="create-action-on-resrce-op-launch.md">create-action-on-resrce-op-launch.md</a></li>
+<li>📄 <a href="create-action-on-resrce-op-reqst.md">create-action-on-resrce-op-reqst.md</a></li>
+<li>📄 <a href="create-api.md">create-api.md</a></li>
+<li>📄 <a href="create-app-profile.md">create-app-profile.md</a></li>
+<li>📄 <a href="create-blueprint-cmp.md">create-blueprint-cmp.md</a></li>
+<li>📄 <a href="create-chef-or-ansible-cfg-provider.md">create-chef-or-ansible-cfg-provider.md</a></li>
+<li>📄 <a href="create-cloud-approval-policy.md">create-cloud-approval-policy.md</a></li>
+<li>📄 <a href="create-cloud-catalog-item.md">create-cloud-catalog-item.md</a></li>
+<li>📄 <a href="create-cloud-init-script-example.md">create-cloud-init-script-example.md</a></li>
+<li>📄 <a href="create-cloud-init-template-and-script.md">create-cloud-init-template-and-script.md</a></li>
+<li>📄 <a href="create-cloud-policy-group.md">create-cloud-policy-group.md</a></li>
+<li>📄 <a href="create-cloud-policy.md">create-cloud-policy.md</a></li>
+<li>📄 <a href="create-cloud-pool.md">create-cloud-pool.md</a></li>
+<li>📄 <a href="create-cloud-quota.md">create-cloud-quota.md</a></li>
+<li>📄 <a href="create-cloud-template.md">create-cloud-template.md</a></li>
+<li>📄 <a href="create-compute-profile.md">create-compute-profile.md</a></li>
+<li>📄 <a href="create-compute-security-profile.md">create-compute-security-profile.md</a></li>
+<li>📄 <a href="create-infoblox.md">create-infoblox.md</a></li>
+<li>📄 <a href="create-interface.md">create-interface.md</a></li>
+<li>📄 <a href="create-ip-pool.md">create-ip-pool.md</a></li>
+<li>📄 <a href="create-or-update-terraform-based-catalog-item.md">create-or-update-terraform-based-catalog-item.md</a></li>
+<li>📄 <a href="create-os-profile.md">create-os-profile.md</a></li>
+<li>📄 <a href="create-permissions.md">create-permissions.md</a></li>
+<li>📄 <a href="create-policy-script.md">create-policy-script.md</a></li>
+<li>📄 <a href="create-post-provisioning.md">create-post-provisioning.md</a></li>
+<li>📄 <a href="create-pre-provisioning.md">create-pre-provisioning.md</a></li>
+<li>📄 <a href="create-provider.md">create-provider.md</a></li>
+<li>📄 <a href="create-resource-block-azure-terraform.md">create-resource-block-azure-terraform.md</a></li>
+<li>📄 <a href="create-resource-block.md">create-resource-block.md</a></li>
+<li>📄 <a href="create-response-processor.md">create-response-processor.md</a></li>
+<li>📄 <a href="create-schedule-profile.md">create-schedule-profile.md</a></li>
+<li>📄 <a href="create-ssh-custom-activity.md">create-ssh-custom-activity.md</a></li>
+<li>📄 <a href="create-ssh-workflow.md">create-ssh-workflow.md</a></li>
+<li>📄 <a href="create-subflow-action-cloud-provision-governance.md">create-subflow-action-cloud-provision-governance.md</a></li>
+<li>📄 <a href="create-subnet.md">create-subnet.md</a></li>
+<li>📄 <a href="create-vcs-credentials-for-terraform-connector.md">create-vcs-credentials-for-terraform-connector.md</a></li>
+<li>📄 <a href="create-vmware-network-subnet-relationship.md">create-vmware-network-subnet-relationship.md</a></li>
+<li>📄 <a href="create-workload-provider-type.md">create-workload-provider-type.md</a></li>
+<li>📄 <a href="credential-handling.md">credential-handling.md</a></li>
+<li>📄 <a href="cust-onboard-dom-sep-sp.md">cust-onboard-dom-sep-sp.md</a></li>
+<li>📄 <a href="day-2-ops-using-workflows.md">day-2-ops-using-workflows.md</a></li>
+<li>📄 <a href="default-apis.md">default-apis.md</a></li>
+<li>📄 <a href="delete-hostrecord-infoblox.md">delete-hostrecord-infoblox.md</a></li>
+<li>📄 <a href="disco-datacntrs-in-srv-acct.md">disco-datacntrs-in-srv-acct.md</a></li>
+<li>📄 <a href="disco-resources-in-datacenter.md">disco-resources-in-datacenter.md</a></li>
+<li>📄 <a href="discover-terraform-config-installables-vcs-workspaces.md">discover-terraform-config-installables-vcs-workspaces.md</a></li>
+<li>📄 <a href="discover-with-cloud-discovery-workspace-and-patterns.md">discover-with-cloud-discovery-workspace-and-patterns.md</a></li>
+<li>📄 <a href="domain-admin-workflow.md">domain-admin-workflow.md</a></li>
+<li>📄 <a href="domain-separation-cloud-management.md">domain-separation-cloud-management.md</a></li>
+<li>📄 <a href="domain-separation-cpg-terraform-connector.md">domain-separation-cpg-terraform-connector.md</a></li>
+<li>📄 <a href="example-blueprint-rules.md">example-blueprint-rules.md</a></li>
+<li>📄 <a href="execute-blueprint-operations-parallel.md">execute-blueprint-operations-parallel.md</a></li>
+<li>📄 <a href="exploring-cpg-terraform-connector.md">exploring-cpg-terraform-connector.md</a></li>
+<li>📄 <a href="export-import-policy.md">export-import-policy.md</a></li>
+<li>📄 <a href="export-updateset-blueprint.md">export-updateset-blueprint.md</a></li>
+<li>📄 <a href="export-updateset-capi.md">export-updateset-capi.md</a></li>
+<li>📄 <a href="export-updateset-rblock.md">export-updateset-rblock.md</a></li>
+<li>📄 <a href="expressions-cloud-mgt.md">expressions-cloud-mgt.md</a></li>
+<li>📄 <a href="extend-cloud-management-entities.md">extend-cloud-management-entities.md</a></li>
+<li>📄 <a href="gcp-add-service-account-cloud-mgt.md">gcp-add-service-account-cloud-mgt.md</a></li>
+<li>📄 <a href="gcp-assign-roles-cloud-mgt.md">gcp-assign-roles-cloud-mgt.md</a></li>
+<li>📄 <a href="gcp-create-creds-cloud-mgt.md">gcp-create-creds-cloud-mgt.md</a></li>
+<li>📄 <a href="gcp-first-cld-and-srvc-accts.md">gcp-first-cld-and-srvc-accts.md</a></li>
+<li>📄 <a href="information-for-upgrading-terraform.md">information-for-upgrading-terraform.md</a></li>
+<li>📄 <a href="install-cpg-terraform-connector.md">install-cpg-terraform-connector.md</a></li>
+<li>📄 <a href="life-cycle-operation-cloudmgt.md">life-cycle-operation-cloudmgt.md</a></li>
+<li>📄 <a href="make-catalog-item-visible.md">make-catalog-item-visible.md</a></li>
+<li>📄 <a href="manage-attributes.md">manage-attributes.md</a></li>
+<li>📄 <a href="manage-resource-block-operations.md">manage-resource-block-operations.md</a></li>
+<li>📄 <a href="manage-resources-k.md">manage-resources-k.md</a></li>
+<li>📄 <a href="map-cloud-mgmt-terraform-credentials.md">map-cloud-mgmt-terraform-credentials.md</a></li>
+<li>📄 <a href="map-script-to-os-profile.md">map-script-to-os-profile.md</a></li>
+<li>📄 <a href="mid-server-script-includes.md">mid-server-script-includes.md</a></li>
+<li>📄 <a href="move-content-intro.md">move-content-intro.md</a></li>
+<li>📄 <a href="open-cloud-orch-api-trail.md">open-cloud-orch-api-trail.md</a></li>
+<li>📄 <a href="open-cloud-orchestrations.md">open-cloud-orchestrations.md</a></li>
+<li>📄 <a href="pattern-based-targeted-discovery.md">pattern-based-targeted-discovery.md</a></li>
+<li>📄 <a href="perform-lifecycle-operations-brownfield-resources.md">perform-lifecycle-operations-brownfield-resources.md</a></li>
+<li>📄 <a href="policy-triggers-cloud-mgt.md">policy-triggers-cloud-mgt.md</a></li>
+<li>📄 <a href="policy-walkthrough.md">policy-walkthrough.md</a></li>
+<li>📄 <a href="pools.md">pools.md</a></li>
+<li>📄 <a href="populate-stack-name-example.md">populate-stack-name-example.md</a></li>
+<li>📄 <a href="product-name-change.md">product-name-change.md</a></li>
+<li>📄 <a href="quick-start-tests-cloud-management.md">quick-start-tests-cloud-management.md</a></li>
+<li>📄 <a href="quota-template-based-stacks.md">quota-template-based-stacks.md</a></li>
+<li>📄 <a href="quotas.md">quotas.md</a></li>
+<li>📄 <a href="register-ip-address-aws-azure.md">register-ip-address-aws-azure.md</a></li>
+<li>📄 <a href="remove-mandatory-field-example.md">remove-mandatory-field-example.md</a></li>
+<li>📄 <a href="request-plugin-cloud-mgt.md">request-plugin-cloud-mgt.md</a></li>
+<li>📄 <a href="reserve-ipaddress-vmware.md">reserve-ipaddress-vmware.md</a></li>
+<li>📄 <a href="resource-blocks.md">resource-blocks.md</a></li>
+<li>📄 <a href="resource-order-control-template-based-catalog.md">resource-order-control-template-based-catalog.md</a></li>
+<li>📄 <a href="resource-quota.md">resource-quota.md</a></li>
+<li>📄 <a href="response-mappings.md">response-mappings.md</a></li>
+<li>📄 <a href="response-processor-example.md">response-processor-example.md</a></li>
+<li>📄 <a href="resubmit-failed-request.md">resubmit-failed-request.md</a></li>
+<li>📄 <a href="sched-uni-disco-srvacct-cloudmgt.md">sched-uni-disco-srvacct-cloudmgt.md</a></li>
+<li>📄 <a href="set-capacity-limits-cloud-mgt.md">set-capacity-limits-cloud-mgt.md</a></li>
+<li>📄 <a href="set-up-resource-order-controls.md">set-up-resource-order-controls.md</a></li>
+<li>📄 <a href="set-value-reference-or-pool.md">set-value-reference-or-pool.md</a></li>
+<li>📄 <a href="setup-azure-govt-cloud-provision-govern.md">setup-azure-govt-cloud-provision-govern.md</a></li>
+<li>📄 <a href="setup-cpg-terraform-connector-for-terraform-enterprise.md">setup-cpg-terraform-connector-for-terraform-enterprise.md</a></li>
+<li>📄 <a href="setup-cpg-terraform-connector-for-terraform-open-source.md">setup-cpg-terraform-connector-for-terraform-open-source.md</a></li>
+<li>📄 <a href="specify-host-resource-cmp.md">specify-host-resource-cmp.md</a></li>
+<li>📄 <a href="specify-resource-bindings-cmp.md">specify-resource-bindings-cmp.md</a></li>
+<li>📄 <a href="support-config-management-providers.md">support-config-management-providers.md</a></li>
+<li>📄 <a href="terraform-auto-pop-location.md">terraform-auto-pop-location.md</a></li>
+<li>📄 <a href="terraform-catalog-metadata-ingest.md">terraform-catalog-metadata-ingest.md</a></li>
+<li>📄 <a href="terraform-use-minor-patch-version-cli.md">terraform-use-minor-patch-version-cli.md</a></li>
+<li>📄 <a href="troubleshooting-tools.md">troubleshooting-tools.md</a></li>
+<li>📄 <a href="use-case-resource-pool.md">use-case-resource-pool.md</a></li>
+<li>📄 <a href="use-cloud-operations-dashboard.md">use-cloud-operations-dashboard.md</a></li>
+<li>📄 <a href="use-cloud-root-call-analysis.md">use-cloud-root-call-analysis.md</a></li>
+<li>📄 <a href="use-credentials-with-workflows.md">use-credentials-with-workflows.md</a></li>
+<li>📄 <a href="use-multiple-repositories-structure-with-terraform-connector.md">use-multiple-repositories-structure-with-terraform-connector.md</a></li>
+<li>📄 <a href="use-owner-and-assignment-groups.md">use-owner-and-assignment-groups.md</a></li>
+<li>📄 <a href="use-ssh-shut-down-vm-w-wkflw-op.md">use-ssh-shut-down-vm-w-wkflw-op.md</a></li>
+<li>📄 <a href="using-ccg-terraform-connector.md">using-ccg-terraform-connector.md</a></li>
+<li>📄 <a href="validate-param-allowedpattern.md">validate-param-allowedpattern.md</a></li>
+<li>📄 <a href="vmware-assign-roles-cloud-mgt.md">vmware-assign-roles-cloud-mgt.md</a></li>
+<li>📄 <a href="vmware-cloud-accts-cloud-mgt.md">vmware-cloud-accts-cloud-mgt.md</a></li>
+<li>📄 <a href="vmware-create-creds-cloud-mgt.md">vmware-create-creds-cloud-mgt.md</a></li>
+<li>📄 <a href="walk-through-azure-provisioning.md">walk-through-azure-provisioning.md</a></li>
+<li>📄 <a href="walk-through-provisioning.md">walk-through-provisioning.md</a></li>
+    </ul>
+</body>
+</html>

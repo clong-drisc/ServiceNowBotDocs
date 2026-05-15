@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>discovery-and-service-mapping-patterns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>discovery-and-service-mapping-patterns</h1>
+    <ul>
+        <li><a href="../index.html">⬅ Back</a></li>
+<li>📄 <a href="AzureVMScaleSetInstance.md">AzureVMScaleSetInstance.md</a></li>
+<li>📄 <a href="activate-disabled-pattern.md">activate-disabled-pattern.md</a></li>
+<li>📄 <a href="add-related-cis-to-the-main-ci-pattern.md">add-related-cis-to-the-main-ci-pattern.md</a></li>
+<li>📄 <a href="alibaba-availability-zone.md">alibaba-availability-zone.md</a></li>
+<li>📄 <a href="alibaba-cloud-discovery-pattern.md">alibaba-cloud-discovery-pattern.md</a></li>
+<li>📄 <a href="alibaba-cloud-hardware-type.md">alibaba-cloud-hardware-type.md</a></li>
+<li>📄 <a href="alibaba-cloud-os-image.md">alibaba-cloud-os-image.md</a></li>
+<li>📄 <a href="alibaba-datacenter-discovery.md">alibaba-datacenter-discovery.md</a></li>
+<li>📄 <a href="alibaba-service-account-discovery.md">alibaba-service-account-discovery.md</a></li>
+<li>📄 <a href="alibaba-storage-volume.md">alibaba-storage-volume.md</a></li>
+<li>📄 <a href="alibaba-virtual-machine.md">alibaba-virtual-machine.md</a></li>
+<li>📄 <a href="amazon-aws-elasticache-discovery.md">amazon-aws-elasticache-discovery.md</a></li>
+<li>📄 <a href="amazon-keyspaces-discovery.md">amazon-keyspaces-discovery.md</a></li>
+<li>📄 <a href="amazon-kinesis-discovery.md">amazon-kinesis-discovery.md</a></li>
+<li>📄 <a href="amazon-opensearch-discovery.md">amazon-opensearch-discovery.md</a></li>
+<li>📄 <a href="amazon-redshift-discovery.md">amazon-redshift-discovery.md</a></li>
+<li>📄 <a href="apigee-edge-discovery.md">apigee-edge-discovery.md</a></li>
+<li>📄 <a href="available-patterns.md">available-patterns.md</a></li>
+<li>📄 <a href="avi-load-balancer-discovery.md">avi-load-balancer-discovery.md</a></li>
+<li>📄 <a href="aws-api-gateway-discovery.md">aws-api-gateway-discovery.md</a></li>
+<li>📄 <a href="aws-api-gateway-domain-name.md">aws-api-gateway-domain-name.md</a></li>
+<li>📄 <a href="aws-application-elb-service-discovery.md">aws-application-elb-service-discovery.md</a></li>
+<li>📄 <a href="aws-auto-scaling-discovery.md">aws-auto-scaling-discovery.md</a></li>
+<li>📄 <a href="aws-batch-compute-environment.md">aws-batch-compute-environment.md</a></li>
+<li>📄 <a href="aws-classic-elb-service-discovery.md">aws-classic-elb-service-discovery.md</a></li>
+<li>📄 <a href="aws-cloudhsm-hsm.md">aws-cloudhsm-hsm.md</a></li>
+<li>📄 <a href="aws-cloudtrail-trail.md">aws-cloudtrail-trail.md</a></li>
+<li>📄 <a href="aws-datacenter-pattern.md">aws-datacenter-pattern.md</a></li>
+<li>📄 <a href="aws-datasync-task.md">aws-datasync-task.md</a></li>
+<li>📄 <a href="aws-db-cluster-discovery.md">aws-db-cluster-discovery.md</a></li>
+<li>📄 <a href="aws-discovery-pattern.md">aws-discovery-pattern.md</a></li>
+<li>📄 <a href="aws-dynamoDB-discovery.md">aws-dynamoDB-discovery.md</a></li>
+<li>📄 <a href="aws-dynamodb-cluster.md">aws-dynamodb-cluster.md</a></li>
+<li>📄 <a href="aws-ec2-ebs-snapshot.md">aws-ec2-ebs-snapshot.md</a></li>
+<li>📄 <a href="aws-ec2-reserved-instance.md">aws-ec2-reserved-instance.md</a></li>
+<li>📄 <a href="aws-ec2-vpc-endpoint-service.md">aws-ec2-vpc-endpoint-service.md</a></li>
+<li>📄 <a href="aws-ec2-vpc-peering-connection.md">aws-ec2-vpc-peering-connection.md</a></li>
+<li>📄 <a href="aws-ecs-fargate-discovery.md">aws-ecs-fargate-discovery.md</a></li>
+<li>📄 <a href="aws-elastic-file-system.md">aws-elastic-file-system.md</a></li>
+<li>📄 <a href="aws-elasticache-snapshot.md">aws-elasticache-snapshot.md</a></li>
+<li>📄 <a href="aws-global-accelerator.md">aws-global-accelerator.md</a></li>
+<li>📄 <a href="aws-hardware-type-pattern.md">aws-hardware-type-pattern.md</a></li>
+<li>📄 <a href="aws-lambda-discovery.md">aws-lambda-discovery.md</a></li>
+<li>📄 <a href="aws-memorydb-discovery.md">aws-memorydb-discovery.md</a></li>
+<li>📄 <a href="aws-mwaa-environment.md">aws-mwaa-environment.md</a></li>
+<li>📄 <a href="aws-network-firewall.md">aws-network-firewall.md</a></li>
+<li>📄 <a href="aws-organizations-pattern.md">aws-organizations-pattern.md</a></li>
+<li>📄 <a href="aws-os-image-pattern.md">aws-os-image-pattern.md</a></li>
+<li>📄 <a href="aws-rds-db-snapshot.md">aws-rds-db-snapshot.md</a></li>
+<li>📄 <a href="aws-rds-discovery.md">aws-rds-discovery.md</a></li>
+<li>📄 <a href="aws-redshift-serverless-namespace.md">aws-redshift-serverless-namespace.md</a></li>
+<li>📄 <a href="aws-redshift-serverless-snapshot.md">aws-redshift-serverless-snapshot.md</a></li>
+<li>📄 <a href="aws-redshift-serverless-workgroup.md">aws-redshift-serverless-workgroup.md</a></li>
+<li>📄 <a href="aws-resource-inventory.md">aws-resource-inventory.md</a></li>
+<li>📄 <a href="aws-route-53-pattern.md">aws-route-53-pattern.md</a></li>
+<li>📄 <a href="aws-s3-discovery.md">aws-s3-discovery.md</a></li>
+<li>📄 <a href="aws-sagemaker-training-job.md">aws-sagemaker-training-job.md</a></li>
+<li>📄 <a href="aws-serverless-database-pattern.md">aws-serverless-database-pattern.md</a></li>
+<li>📄 <a href="aws-service-discovery-pattern.md">aws-service-discovery-pattern.md</a></li>
+<li>📄 <a href="aws-storage-gateway-file-share.md">aws-storage-gateway-file-share.md</a></li>
+<li>📄 <a href="aws-sub-account-pattern.md">aws-sub-account-pattern.md</a></li>
+<li>📄 <a href="aws-timestream-influxdb-db-instance.md">aws-timestream-influxdb-db-instance.md</a></li>
+<li>📄 <a href="aws-virtual-server-pattern.md">aws-virtual-server-pattern.md</a></li>
+<li>📄 <a href="aws_cognito-discovery-pattern.md">aws_cognito-discovery-pattern.md</a></li>
+<li>📄 <a href="azure-app-configuration-store.md">azure-app-configuration-store.md</a></li>
+<li>📄 <a href="azure-app-insight-component.md">azure-app-insight-component.md</a></li>
+<li>📄 <a href="azure-app-insight-data-collect-rule.md">azure-app-insight-data-collect-rule.md</a></li>
+<li>📄 <a href="azure-app-security-group.md">azure-app-security-group.md</a></li>
+<li>📄 <a href="azure-app-service-plan.md">azure-app-service-plan.md</a></li>
+<li>📄 <a href="azure-application-gateway-discovery.md">azure-application-gateway-discovery.md</a></li>
+<li>📄 <a href="azure-automation-account.md">azure-automation-account.md</a></li>
+<li>📄 <a href="azure-availability-sets-patterns.md">azure-availability-sets-patterns.md</a></li>
+<li>📄 <a href="azure-availability-zones-patterns.md">azure-availability-zones-patterns.md</a></li>
+<li>📄 <a href="azure-blob-storage-pattern.md">azure-blob-storage-pattern.md</a></li>
+<li>📄 <a href="azure-classic-load-balancer-pattern.md">azure-classic-load-balancer-pattern.md</a></li>
+<li>📄 <a href="azure-cloud-discovery-patterns.md">azure-cloud-discovery-patterns.md</a></li>
+<li>📄 <a href="azure-compute-gallery-img-definition.md">azure-compute-gallery-img-definition.md</a></li>
+<li>📄 <a href="azure-compute-snapshot.md">azure-compute-snapshot.md</a></li>
+<li>📄 <a href="azure-container-registry.md">azure-container-registry.md</a></li>
+<li>📄 <a href="azure-cosmos-db-postgresql-cluster.md">azure-cosmos-db-postgresql-cluster.md</a></li>
+<li>📄 <a href="azure-data-explorer-cluster.md">azure-data-explorer-cluster.md</a></li>
+<li>📄 <a href="azure-data-factory.md">azure-data-factory.md</a></li>
+<li>📄 <a href="azure-data-protection-backup-vault.md">azure-data-protection-backup-vault.md</a></li>
+<li>📄 <a href="azure-databricks-workspace.md">azure-databricks-workspace.md</a></li>
+<li>📄 <a href="azure-datacenter-discovery-pattern.md">azure-datacenter-discovery-pattern.md</a></li>
+<li>📄 <a href="azure-dev-center.md">azure-dev-center.md</a></li>
+<li>📄 <a href="azure-disk-encryption-set.md">azure-disk-encryption-set.md</a></li>
+<li>📄 <a href="azure-dns-discovery.md">azure-dns-discovery.md</a></li>
+<li>📄 <a href="azure-event-grid-pattern.md">azure-event-grid-pattern.md</a></li>
+<li>📄 <a href="azure-event-hub-namespace.md">azure-event-hub-namespace.md</a></li>
+<li>📄 <a href="azure-express-route-circuit-pattern.md">azure-express-route-circuit-pattern.md</a></li>
+<li>📄 <a href="azure-file-share-pattern.md">azure-file-share-pattern.md</a></li>
+<li>📄 <a href="azure-firewall-network-security.md">azure-firewall-network-security.md</a></li>
+<li>📄 <a href="azure-function-discovery.md">azure-function-discovery.md</a></li>
+<li>📄 <a href="azure-hardware-type-pattern.md">azure-hardware-type-pattern.md</a></li>
+<li>📄 <a href="azure-host-pattern.md">azure-host-pattern.md</a></li>
+<li>📄 <a href="azure-key-vault.md">azure-key-vault.md</a></li>
+<li>📄 <a href="azure-local-network-gateway-pattern.md">azure-local-network-gateway-pattern.md</a></li>
+<li>📄 <a href="azure-log-analytics-workspace.md">azure-log-analytics-workspace.md</a></li>
+<li>📄 <a href="azure-logic-app.md">azure-logic-app.md</a></li>
+<li>📄 <a href="azure-managed-id-user-assigned-id.md">azure-managed-id-user-assigned-id.md</a></li>
+<li>📄 <a href="azure-nat-gateway-pattern.md">azure-nat-gateway-pattern.md</a></li>
+<li>📄 <a href="azure-networks-ip-group.md">azure-networks-ip-group.md</a></li>
+<li>📄 <a href="azure-os-image-pattern.md">azure-os-image-pattern.md</a></li>
+<li>📄 <a href="azure-private-dns-zone-pattern.md">azure-private-dns-zone-pattern.md</a></li>
+<li>📄 <a href="azure-private-link-private-endpoint.md">azure-private-link-private-endpoint.md</a></li>
+<li>📄 <a href="azure-recovery-services-vault-backup.md">azure-recovery-services-vault-backup.md</a></li>
+<li>📄 <a href="azure-recovery-services-vault.md">azure-recovery-services-vault.md</a></li>
+<li>📄 <a href="azure-resource-inventory-pattern.md">azure-resource-inventory-pattern.md</a></li>
+<li>📄 <a href="azure-service-bus-namespace.md">azure-service-bus-namespace.md</a></li>
+<li>📄 <a href="azure-service-bus-queue.md">azure-service-bus-queue.md</a></li>
+<li>📄 <a href="azure-service-bus-topic.md">azure-service-bus-topic.md</a></li>
+<li>📄 <a href="azure-service-endpoint-policy.md">azure-service-endpoint-policy.md</a></li>
+<li>📄 <a href="azure-sub-mgmt-group-pattern.md">azure-sub-mgmt-group-pattern.md</a></li>
+<li>📄 <a href="azure-vm-pattern.md">azure-vm-pattern.md</a></li>
+<li>📄 <a href="azure-vng-connection-pattern.md">azure-vng-connection-pattern.md</a></li>
+<li>📄 <a href="azure-web-app-firewall-policy.md">azure-web-app-firewall-policy.md</a></li>
+<li>📄 <a href="c_MappingPatternsCustomization.md">c_MappingPatternsCustomization.md</a></li>
+<li>📄 <a href="cassandra-discovery.md">cassandra-discovery.md</a></li>
+<li>📄 <a href="check-pattern-availability.md">check-pattern-availability.md</a></li>
+<li>📄 <a href="cisco-fw-discovery.md">cisco-fw-discovery.md</a></li>
+<li>📄 <a href="cisco-waps-discovery.md">cisco-waps-discovery.md</a></li>
+<li>📄 <a href="citrix-netscaler-sdx-discovery.md">citrix-netscaler-sdx-discovery.md</a></li>
+<li>📄 <a href="citrix-xen-hyper-v-discovery.md">citrix-xen-hyper-v-discovery.md</a></li>
+<li>📄 <a href="cloud-rest-query-pattern.md">cloud-rest-query-pattern.md</a></li>
+<li>📄 <a href="cloudian-storage-discovery.md">cloudian-storage-discovery.md</a></li>
+<li>📄 <a href="cohesity-storage-system-discovery.md">cohesity-storage-system-discovery.md</a></li>
+<li>📄 <a href="cold-fusion-discovery.md">cold-fusion-discovery.md</a></li>
+<li>📄 <a href="compare-pattern-versions.md">compare-pattern-versions.md</a></li>
+<li>📄 <a href="configuring-pattern-designer-plugins.md">configuring-pattern-designer-plugins.md</a></li>
+<li>📄 <a href="connection-section-traffic-based.md">connection-section-traffic-based.md</a></li>
+<li>📄 <a href="couchbase-db-discovery.md">couchbase-db-discovery.md</a></li>
+<li>📄 <a href="create-alias-api-key-cred-fortinet.md">create-alias-api-key-cred-fortinet.md</a></li>
+<li>📄 <a href="create-alias-basic-auth-cred-cohesity.md">create-alias-basic-auth-cred-cohesity.md</a></li>
+<li>📄 <a href="create-serverless-schedule-cohesity.md">create-serverless-schedule-cohesity.md</a></li>
+<li>📄 <a href="create-serverless-schedule-ecs.md">create-serverless-schedule-ecs.md</a></li>
+<li>📄 <a href="create-serverless-schedule-fortinet.md">create-serverless-schedule-fortinet.md</a></li>
+<li>📄 <a href="create-serverless-schedule-ms-ca.md">create-serverless-schedule-ms-ca.md</a></li>
+<li>📄 <a href="create-serverless-schedule-nutanix.md">create-serverless-schedule-nutanix.md</a></li>
+<li>📄 <a href="data-discovered-aws-patterns.md">data-discovered-aws-patterns.md</a></li>
+<li>📄 <a href="disable-snmp-fortinet-fw-discovery.md">disable-snmp-fortinet-fw-discovery.md</a></li>
+<li>📄 <a href="download-oracle-glas-data.md">download-oracle-glas-data.md</a></li>
+<li>📄 <a href="emc-data-domain-pattern.md">emc-data-domain-pattern.md</a></li>
+<li>📄 <a href="emc-isilon-discovery.md">emc-isilon-discovery.md</a></li>
+<li>📄 <a href="emc-powermax-discovery-pattern.md">emc-powermax-discovery-pattern.md</a></li>
+<li>📄 <a href="enable-aws-app-lb-discovery.md">enable-aws-app-lb-discovery.md</a></li>
+<li>📄 <a href="enable-cloud-os-image-discovery-pattern.md">enable-cloud-os-image-discovery-pattern.md</a></li>
+<li>📄 <a href="enable-hardware-type-class-extension.md">enable-hardware-type-class-extension.md</a></li>
+<li>📄 <a href="enable-nutanix-v4-discovery.md">enable-nutanix-v4-discovery.md</a></li>
+<li>📄 <a href="exclude-temp-azure-databricks-vms.md">exclude-temp-azure-databricks-vms.md</a></li>
+<li>📄 <a href="export-patterns.md">export-patterns.md</a></li>
+<li>📄 <a href="f5-certificate-discovery.md">f5-certificate-discovery.md</a></li>
+<li>📄 <a href="flasharray-discovery.md">flasharray-discovery.md</a></li>
+<li>📄 <a href="fortinet-fw-discovery.md">fortinet-fw-discovery.md</a></li>
+<li>📄 <a href="fortinet-fw-vdoms-rest-discovery.md">fortinet-fw-vdoms-rest-discovery.md</a></li>
+<li>📄 <a href="gcp-alloydb-postgresql-patterns.md">gcp-alloydb-postgresql-patterns.md</a></li>
+<li>📄 <a href="gcp-bigquery-db-pattern.md">gcp-bigquery-db-pattern.md</a></li>
+<li>📄 <a href="gcp-bigtable-db-pattern.md">gcp-bigtable-db-pattern.md</a></li>
+<li>📄 <a href="gcp-cloud-discovery-patterns.md">gcp-cloud-discovery-patterns.md</a></li>
+<li>📄 <a href="gcp-cloud-functions-patterns.md">gcp-cloud-functions-patterns.md</a></li>
+<li>📄 <a href="gcp-cloud-sql-db-pattern.md">gcp-cloud-sql-db-pattern.md</a></li>
+<li>📄 <a href="gcp-disk-types-pattern.md">gcp-disk-types-pattern.md</a></li>
+<li>📄 <a href="gcp-events-pattern.md">gcp-events-pattern.md</a></li>
+<li>📄 <a href="gcp-external-ip-addresses-pattern.md">gcp-external-ip-addresses-pattern.md</a></li>
+<li>📄 <a href="gcp-firebase-realtime-db-pattern.md">gcp-firebase-realtime-db-pattern.md</a></li>
+<li>📄 <a href="gcp-firestore-db-pattern.md">gcp-firestore-db-pattern.md</a></li>
+<li>📄 <a href="gcp-load-balancer-pattern.md">gcp-load-balancer-pattern.md</a></li>
+<li>📄 <a href="gcp-memorystore-patterns.md">gcp-memorystore-patterns.md</a></li>
+<li>📄 <a href="gcp-networking-pattern.md">gcp-networking-pattern.md</a></li>
+<li>📄 <a href="gcp-resource-inventory-discovery.md">gcp-resource-inventory-discovery.md</a></li>
+<li>📄 <a href="gcp-spanner-db-pattern.md">gcp-spanner-db-pattern.md</a></li>
+<li>📄 <a href="gcp-ssh-keys-pattern.md">gcp-ssh-keys-pattern.md</a></li>
+<li>📄 <a href="gcp-storage-pattern.md">gcp-storage-pattern.md</a></li>
+<li>📄 <a href="gcp-virtual-server-pattern.md">gcp-virtual-server-pattern.md</a></li>
+<li>📄 <a href="google-gcp-organization-discovery.md">google-gcp-organization-discovery.md</a></li>
+<li>📄 <a href="gunicorn-pattern.md">gunicorn-pattern.md</a></li>
+<li>📄 <a href="haproxy-lb-discovery-pattern.md">haproxy-lb-discovery-pattern.md</a></li>
+<li>📄 <a href="hpe-bladesystem-enclosure-discovery.md">hpe-bladesystem-enclosure-discovery.md</a></li>
+<li>📄 <a href="ibm-cloud-platform-discovery.md">ibm-cloud-platform-discovery.md</a></li>
+<li>📄 <a href="ibm-db2-linux-discovery.md">ibm-db2-linux-discovery.md</a></li>
+<li>📄 <a href="ibm-db2-windows-discovery.md">ibm-db2-windows-discovery.md</a></li>
+<li>📄 <a href="ibm-hmc-discovery.md">ibm-hmc-discovery.md</a></li>
+<li>📄 <a href="ibm-informix-discovery.md">ibm-informix-discovery.md</a></li>
+<li>📄 <a href="ibm-powerha-hamcp-discovery.md">ibm-powerha-hamcp-discovery.md</a></li>
+<li>📄 <a href="ibm-websphere-server-pattern.md">ibm-websphere-server-pattern.md</a></li>
+<li>📄 <a href="ibm_webseal_discovery_patterns.md">ibm_webseal_discovery_patterns.md</a></li>
+<li>📄 <a href="infinibox-discovery.md">infinibox-discovery.md</a></li>
+<li>📄 <a href="install-discovery-service-mapping-patterns.md">install-discovery-service-mapping-patterns.md</a></li>
+<li>📄 <a href="install-itom-visibility-global-content.md">install-itom-visibility-global-content.md</a></li>
+<li>📄 <a href="jboss-fuse-discovery.md">jboss-fuse-discovery.md</a></li>
+<li>📄 <a href="juniper-fw-discovery.md">juniper-fw-discovery.md</a></li>
+<li>📄 <a href="kafka-zookeeper-discovery.md">kafka-zookeeper-discovery.md</a></li>
+<li>📄 <a href="limit-aws-discovery-active-datacenter.md">limit-aws-discovery-active-datacenter.md</a></li>
+<li>📄 <a href="linux-pacemaker-cluster-discovery.md">linux-pacemaker-cluster-discovery.md</a></li>
+<li>📄 <a href="microsoft-ca-discovery.md">microsoft-ca-discovery.md</a></li>
+<li>📄 <a href="modify-pattern-using-extensions.md">modify-pattern-using-extensions.md</a></li>
+<li>📄 <a href="network-router-patterns.md">network-router-patterns.md</a></li>
+<li>📄 <a href="network-switch-patterns.md">network-switch-patterns.md</a></li>
+<li>📄 <a href="nutanix-pattern.md">nutanix-pattern.md</a></li>
+<li>📄 <a href="nvidia-gpu-discovery-pattern.md">nvidia-gpu-discovery-pattern.md</a></li>
+<li>📄 <a href="openstack-discovery.md">openstack-discovery.md</a></li>
+<li>📄 <a href="oracle-analytics-server-pattern.md">oracle-analytics-server-pattern.md</a></li>
+<li>📄 <a href="oracle-catalog-discovery.md">oracle-catalog-discovery.md</a></li>
+<li>📄 <a href="oracle-cdb-pdb-discovery.md">oracle-cdb-pdb-discovery.md</a></li>
+<li>📄 <a href="oracle-glas-discovery.md">oracle-glas-discovery.md</a></li>
+<li>📄 <a href="oracle-golden-gate-discovery.md">oracle-golden-gate-discovery.md</a></li>
+<li>📄 <a href="oracle-listener-hd-discovery.md">oracle-listener-hd-discovery.md</a></li>
+<li>📄 <a href="palo-alto-fw-discovery.md">palo-alto-fw-discovery.md</a></li>
+<li>📄 <a href="password2-encryption-patterns.md">password2-encryption-patterns.md</a></li>
+<li>📄 <a href="pivotal-cloud-foundry.md">pivotal-cloud-foundry.md</a></li>
+<li>📄 <a href="populate-service-account-ldc-fields.md">populate-service-account-ldc-fields.md</a></li>
+<li>📄 <a href="pure-storage-discovery.md">pure-storage-discovery.md</a></li>
+<li>📄 <a href="query-service-account-ldc-fields.md">query-service-account-ldc-fields.md</a></li>
+<li>📄 <a href="red-hat-virtualization-discovery.md">red-hat-virtualization-discovery.md</a></li>
+<li>📄 <a href="retire-legacy-aws-api-gateway-cis.md">retire-legacy-aws-api-gateway-cis.md</a></li>
+<li>📄 <a href="rubrik-discovery.md">rubrik-discovery.md</a></li>
+<li>📄 <a href="solaris-ldom-discovery.md">solaris-ldom-discovery.md</a></li>
+<li>📄 <a href="solidfire-storage-pattern.md">solidfire-storage-pattern.md</a></li>
+<li>📄 <a href="t_ChoosePatternVersionPatDef.md">t_ChoosePatternVersionPatDef.md</a></li>
+<li>📄 <a href="t_CreateCITypeForSM.md">t_CreateCITypeForSM.md</a></li>
+<li>📄 <a href="t_CreateEntryPoint.md">t_CreateEntryPoint.md</a></li>
+<li>📄 <a href="t_CreatePatternPatDef.md">t_CreatePatternPatDef.md</a></li>
+<li>📄 <a href="t_FinalizePatternPatDef.md">t_FinalizePatternPatDef.md</a></li>
+<li>📄 <a href="test-patterns-for-discovering-aws-api-and-aws-lambda.md">test-patterns-for-discovering-aws-api-and-aws-lambda.md</a></li>
+<li>📄 <a href="veritas-cluster-server-discovery.md">veritas-cluster-server-discovery.md</a></li>
+<li>📄 <a href="vmware-nsx-lb-discovery.md">vmware-nsx-lb-discovery.md</a></li>
+<li>📄 <a href="xtreamio-storage-array-discovery.md">xtreamio-storage-array-discovery.md</a></li>
+    </ul>
+</body>
+</html>

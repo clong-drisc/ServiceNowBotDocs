@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>health-log-analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>health-log-analytics</h1>
+    <ul>
+        <li><a href="../index.html">⬅ Back</a></li>
+<li>📄 <a href="hla-administer.md">hla-administer.md</a></li>
+<li>📄 <a href="hla-alert-notification-in-channel.md">hla-alert-notification-in-channel.md</a></li>
+<li>📄 <a href="hla-alert-overview-tab.md">hla-alert-overview-tab.md</a></li>
+<li>📄 <a href="hla-alert-rules-manage.md">hla-alert-rules-manage.md</a></li>
+<li>📄 <a href="hla-alerts-in-group-ref.md">hla-alerts-in-group-ref.md</a></li>
+<li>📄 <a href="hla-analytics-reporting.md">hla-analytics-reporting.md</a></li>
+<li>📄 <a href="hla-architecture.md">hla-architecture.md</a></li>
+<li>📄 <a href="hla-cmdb-enrich-concept.md">hla-cmdb-enrich-concept.md</a></li>
+<li>📄 <a href="hla-cmdb-enrich-fields.md">hla-cmdb-enrich-fields.md</a></li>
+<li>📄 <a href="hla-cmdb-enrich.md">hla-cmdb-enrich.md</a></li>
+<li>📄 <a href="hla-components.md">hla-components.md</a></li>
+<li>📄 <a href="hla-config.md">hla-config.md</a></li>
+<li>📄 <a href="hla-configuration-preferences.md">hla-configuration-preferences.md</a></li>
+<li>📄 <a href="hla-configuring.md">hla-configuring.md</a></li>
+<li>📄 <a href="hla-connector-config-fields.dita.md">hla-connector-config-fields.dita.md</a></li>
+<li>📄 <a href="hla-content-pack-activate.md">hla-content-pack-activate.md</a></li>
+<li>📄 <a href="hla-content-pack.md">hla-content-pack.md</a></li>
+<li>📄 <a href="hla-content-packs.md">hla-content-packs.md</a></li>
+<li>📄 <a href="hla-correlators-exclude-source.md">hla-correlators-exclude-source.md</a></li>
+<li>📄 <a href="hla-data-input-adv-azure-la.md">hla-data-input-adv-azure-la.md</a></li>
+<li>📄 <a href="hla-data-input-adv-beats.md">hla-data-input-adv-beats.md</a></li>
+<li>📄 <a href="hla-data-input-adv-cloudwatch.md">hla-data-input-adv-cloudwatch.md</a></li>
+<li>📄 <a href="hla-data-input-adv-configuration.md">hla-data-input-adv-configuration.md</a></li>
+<li>📄 <a href="hla-data-input-adv-elastic.md">hla-data-input-adv-elastic.md</a></li>
+<li>📄 <a href="hla-data-input-adv-event-hubs.md">hla-data-input-adv-event-hubs.md</a></li>
+<li>📄 <a href="hla-data-input-adv-kafka.md">hla-data-input-adv-kafka.md</a></li>
+<li>📄 <a href="hla-data-input-adv-mid-server.md">hla-data-input-adv-mid-server.md</a></li>
+<li>📄 <a href="hla-data-input-adv-rsyslog-splunk.md">hla-data-input-adv-rsyslog-splunk.md</a></li>
+<li>📄 <a href="hla-data-input-adv-s3.md">hla-data-input-adv-s3.md</a></li>
+<li>📄 <a href="hla-data-input-automapping.md">hla-data-input-automapping.md</a></li>
+<li>📄 <a href="hla-data-input-azure-ref.md">hla-data-input-azure-ref.md</a></li>
+<li>📄 <a href="hla-data-input-azure.md">hla-data-input-azure.md</a></li>
+<li>📄 <a href="hla-data-input-cloudwatch-ref.md">hla-data-input-cloudwatch-ref.md</a></li>
+<li>📄 <a href="hla-data-input-cloudwatch.md">hla-data-input-cloudwatch.md</a></li>
+<li>📄 <a href="hla-data-input-config-fields.md">hla-data-input-config-fields.md</a></li>
+<li>📄 <a href="hla-data-input-cribl-ref.md">hla-data-input-cribl-ref.md</a></li>
+<li>📄 <a href="hla-data-input-cribl.md">hla-data-input-cribl.md</a></li>
+<li>📄 <a href="hla-data-input-edge-delta-ref.md">hla-data-input-edge-delta-ref.md</a></li>
+<li>📄 <a href="hla-data-input-edge-delta.md">hla-data-input-edge-delta.md</a></li>
+<li>📄 <a href="hla-data-input-elastic-ref.md">hla-data-input-elastic-ref.md</a></li>
+<li>📄 <a href="hla-data-input-elastic.md">hla-data-input-elastic.md</a></li>
+<li>📄 <a href="hla-data-input-event-hubs-ref.md">hla-data-input-event-hubs-ref.md</a></li>
+<li>📄 <a href="hla-data-input-event-hubs.md">hla-data-input-event-hubs.md</a></li>
+<li>📄 <a href="hla-data-input-gcp-pubsub-ref.md">hla-data-input-gcp-pubsub-ref.md</a></li>
+<li>📄 <a href="hla-data-input-gcp-pubsub.md">hla-data-input-gcp-pubsub.md</a></li>
+<li>📄 <a href="hla-data-input-glide-syslog-ref.md">hla-data-input-glide-syslog-ref.md</a></li>
+<li>📄 <a href="hla-data-input-glide-syslog.md">hla-data-input-glide-syslog.md</a></li>
+<li>📄 <a href="hla-data-input-import.md">hla-data-input-import.md</a></li>
+<li>📄 <a href="hla-data-input-kafka-credentials.md">hla-data-input-kafka-credentials.md</a></li>
+<li>📄 <a href="hla-data-input-kafka-ref.md">hla-data-input-kafka-ref.md</a></li>
+<li>📄 <a href="hla-data-input-kafka.md">hla-data-input-kafka.md</a></li>
+<li>📄 <a href="hla-data-input-mapping.md">hla-data-input-mapping.md</a></li>
+<li>📄 <a href="hla-data-input-mid-server-ref.md">hla-data-input-mid-server-ref.md</a></li>
+<li>📄 <a href="hla-data-input-mid-server.md">hla-data-input-mid-server.md</a></li>
+<li>📄 <a href="hla-data-input-migrate.md">hla-data-input-migrate.md</a></li>
+<li>📄 <a href="hla-data-input-migration.md">hla-data-input-migration.md</a></li>
+<li>📄 <a href="hla-data-input-modify.md">hla-data-input-modify.md</a></li>
+<li>📄 <a href="hla-data-input-preprocess.md">hla-data-input-preprocess.md</a></li>
+<li>📄 <a href="hla-data-input-rest-api-ref.md">hla-data-input-rest-api-ref.md</a></li>
+<li>📄 <a href="hla-data-input-rest-api.md">hla-data-input-rest-api.md</a></li>
+<li>📄 <a href="hla-data-input-rsyslog-beats.md">hla-data-input-rsyslog-beats.md</a></li>
+<li>📄 <a href="hla-data-input-s3-ref.md">hla-data-input-s3-ref.md</a></li>
+<li>📄 <a href="hla-data-input-s3.md">hla-data-input-s3.md</a></li>
+<li>📄 <a href="hla-data-input-setup-extra.md">hla-data-input-setup-extra.md</a></li>
+<li>📄 <a href="hla-data-input-setup-guided.md">hla-data-input-setup-guided.md</a></li>
+<li>📄 <a href="hla-data-input-setup-integrations.md">hla-data-input-setup-integrations.md</a></li>
+<li>📄 <a href="hla-data-input-setup-manual.md">hla-data-input-setup-manual.md</a></li>
+<li>📄 <a href="hla-data-input-splunk-polling-ref.md">hla-data-input-splunk-polling-ref.md</a></li>
+<li>📄 <a href="hla-data-input-splunk-polling.md">hla-data-input-splunk-polling.md</a></li>
+<li>📄 <a href="hla-data-input-splunk-ref.md">hla-data-input-splunk-ref.md</a></li>
+<li>📄 <a href="hla-data-input-splunk.md">hla-data-input-splunk.md</a></li>
+<li>📄 <a href="hla-data-input-stop-start.md">hla-data-input-stop-start.md</a></li>
+<li>📄 <a href="hla-data-input-streaming.md">hla-data-input-streaming.md</a></li>
+<li>📄 <a href="hla-data-input-supported.md">hla-data-input-supported.md</a></li>
+<li>📄 <a href="hla-data-input-syslog-beats-ref.md">hla-data-input-syslog-beats-ref.md</a></li>
+<li>📄 <a href="hla-data-input-tcp-ref.md">hla-data-input-tcp-ref.md</a></li>
+<li>📄 <a href="hla-data-input-tcp.md">hla-data-input-tcp.md</a></li>
+<li>📄 <a href="hla-data-input-udp-ref.md">hla-data-input-udp-ref.md</a></li>
+<li>📄 <a href="hla-data-input-udp.md">hla-data-input-udp.md</a></li>
+<li>📄 <a href="hla-data-input-vector-agent-ref.md">hla-data-input-vector-agent-ref.md</a></li>
+<li>📄 <a href="hla-data-input-vector-agent.md">hla-data-input-vector-agent.md</a></li>
+<li>📄 <a href="hla-data-inputs-configuring.md">hla-data-inputs-configuring.md</a></li>
+<li>📄 <a href="hla-domain-separation.md">hla-domain-separation.md</a></li>
+<li>📄 <a href="hla-exploring.md">hla-exploring.md</a></li>
+<li>📄 <a href="hla-export-sourcetypes-by-source.md">hla-export-sourcetypes-by-source.md</a></li>
+<li>📄 <a href="hla-features-configure.md">hla-features-configure.md</a></li>
+<li>📄 <a href="hla-grpc-connectivity-check.md">hla-grpc-connectivity-check.md</a></li>
+<li>📄 <a href="hla-header-detection.md">hla-header-detection.md</a></li>
+<li>📄 <a href="hla-implement.md">hla-implement.md</a></li>
+<li>📄 <a href="hla-install.md">hla-install.md</a></li>
+<li>📄 <a href="hla-integration-overview-tab.md">hla-integration-overview-tab.md</a></li>
+<li>📄 <a href="hla-landing-page.md">hla-landing-page.md</a></li>
+<li>📄 <a href="hla-lexical-keywords-admin.md">hla-lexical-keywords-admin.md</a></li>
+<li>📄 <a href="hla-localization.md">hla-localization.md</a></li>
+<li>📄 <a href="hla-log-anomaly-detection.md">hla-log-anomaly-detection.md</a></li>
+<li>📄 <a href="hla-log-correlators-form-ref.md">hla-log-correlators-form-ref.md</a></li>
+<li>📄 <a href="hla-log-data-exclude.md">hla-log-data-exclude.md</a></li>
+<li>📄 <a href="hla-log-data-extract.md">hla-log-data-extract.md</a></li>
+<li>📄 <a href="hla-log-retention-space.md">hla-log-retention-space.md</a></li>
+<li>📄 <a href="hla-log-retention.md">hla-log-retention.md</a></li>
+<li>📄 <a href="hla-log-source-delete.md">hla-log-source-delete.md</a></li>
+<li>📄 <a href="hla-log-sources-review.md">hla-log-sources-review.md</a></li>
+<li>📄 <a href="hla-mapping-script-outcome-ref.md">hla-mapping-script-outcome-ref.md</a></li>
+<li>📄 <a href="hla-mid-proxy-configure.md">hla-mid-proxy-configure.md</a></li>
+<li>📄 <a href="hla-notifications-in-channel.md">hla-notifications-in-channel.md</a></li>
+<li>📄 <a href="hla-notifications-in-ms-teams.md">hla-notifications-in-ms-teams.md</a></li>
+<li>📄 <a href="hla-op-adv-alert-filter-crud.md">hla-op-adv-alert-filter-crud.md</a></li>
+<li>📄 <a href="hla-op-adv-alert-filtering.md">hla-op-adv-alert-filtering.md</a></li>
+<li>📄 <a href="hla-op-alert-add-kb.md">hla-op-alert-add-kb.md</a></li>
+<li>📄 <a href="hla-op-alert-make-significant.md">hla-op-alert-make-significant.md</a></li>
+<li>📄 <a href="hla-op-alert-mute.md">hla-op-alert-mute.md</a></li>
+<li>📄 <a href="hla-op-alert-restore-user-defined.md">hla-op-alert-restore-user-defined.md</a></li>
+<li>📄 <a href="hla-op-alert-rule-add.md">hla-op-alert-rule-add.md</a></li>
+<li>📄 <a href="hla-op-alert-significance.md">hla-op-alert-significance.md</a></li>
+<li>📄 <a href="hla-op-alert-view-ignored-list.md">hla-op-alert-view-ignored-list.md</a></li>
+<li>📄 <a href="hla-op-alrt-inst-simlr-alrts-tab.md">hla-op-alrt-inst-simlr-alrts-tab.md</a></li>
+<li>📄 <a href="hla-op-anomalies-detecting.md">hla-op-anomalies-detecting.md</a></li>
+<li>📄 <a href="hla-op-anomalous-behavior-types.md">hla-op-anomalous-behavior-types.md</a></li>
+<li>📄 <a href="hla-op-correlator-define.md">hla-op-correlator-define.md</a></li>
+<li>📄 <a href="hla-op-correlator-what-is-a.md">hla-op-correlator-what-is-a.md</a></li>
+<li>📄 <a href="hla-op-defined-alert-delete.md">hla-op-defined-alert-delete.md</a></li>
+<li>📄 <a href="hla-op-defined-alert-modify.md">hla-op-defined-alert-modify.md</a></li>
+<li>📄 <a href="hla-op-features-view-settings.md">hla-op-features-view-settings.md</a></li>
+<li>📄 <a href="hla-op-lexical-keywords-manage.md">hla-op-lexical-keywords-manage.md</a></li>
+<li>📄 <a href="hla-op-log-analytics-alert-types.md">hla-op-log-analytics-alert-types.md</a></li>
+<li>📄 <a href="hla-op-log-viewer-filter.md">hla-op-log-viewer-filter.md</a></li>
+<li>📄 <a href="hla-op-log-viewer-table-ref.md">hla-op-log-viewer-table-ref.md</a></li>
+<li>📄 <a href="hla-op-log-viewer-table.md">hla-op-log-viewer-table.md</a></li>
+<li>📄 <a href="hla-op-logs-log-viewer-concept.md">hla-op-logs-log-viewer-concept.md</a></li>
+<li>📄 <a href="hla-op-logs-log-viewer.md">hla-op-logs-log-viewer.md</a></li>
+<li>📄 <a href="hla-op-overview-tab-view.md">hla-op-overview-tab-view.md</a></li>
+<li>📄 <a href="hla-op-ovrvw-tab-comp-based-alerts.md">hla-op-ovrvw-tab-comp-based-alerts.md</a></li>
+<li>📄 <a href="hla-op-ovrvw-tab-log-anltcs-alerts.md">hla-op-ovrvw-tab-log-anltcs-alerts.md</a></li>
+<li>📄 <a href="hla-op-ovrvw-tab-single-ci-alerts.md">hla-op-ovrvw-tab-single-ci-alerts.md</a></li>
+<li>📄 <a href="hla-op-search-queries-manage.md">hla-op-search-queries-manage.md</a></li>
+<li>📄 <a href="hla-op-search-queries-saved.md">hla-op-search-queries-saved.md</a></li>
+<li>📄 <a href="hla-op-surrounding-logs-view-concept.md">hla-op-surrounding-logs-view-concept.md</a></li>
+<li>📄 <a href="hla-op-surrounding-logs-view.md">hla-op-surrounding-logs-view.md</a></li>
+<li>📄 <a href="hla-overview-dashboard.md">hla-overview-dashboard.md</a></li>
+<li>📄 <a href="hla-reference.md">hla-reference.md</a></li>
+<li>📄 <a href="hla-scale-request.md">hla-scale-request.md</a></li>
+<li>📄 <a href="hla-scaling.md">hla-scaling.md</a></li>
+<li>📄 <a href="hla-self-health-notifications.md">hla-self-health-notifications.md</a></li>
+<li>📄 <a href="hla-severity-mapping.md">hla-severity-mapping.md</a></li>
+<li>📄 <a href="hla-source-type-structure-adjustment.md">hla-source-type-structure-adjustment.md</a></li>
+<li>📄 <a href="hla-source-type-structure-refine.md">hla-source-type-structure-refine.md</a></li>
+<li>📄 <a href="hla-source-types-import.md">hla-source-types-import.md</a></li>
+<li>📄 <a href="hla-source-types-manual.md">hla-source-types-manual.md</a></li>
+<li>📄 <a href="hla-source-types-migrate.md">hla-source-types-migrate.md</a></li>
+<li>📄 <a href="hla-source-types.md">hla-source-types.md</a></li>
+<li>📄 <a href="hla-sts-properties-table.md">hla-sts-properties-table.md</a></li>
+<li>📄 <a href="hla-surrounding-logs-tab.md">hla-surrounding-logs-tab.md</a></li>
+<li>📄 <a href="hla-sys-health-notifications-ref.md">hla-sys-health-notifications-ref.md</a></li>
+<li>📄 <a href="hla-system-health-service-map-view.md">hla-system-health-service-map-view.md</a></li>
+<li>📄 <a href="hla-system-health-service-map.md">hla-system-health-service-map.md</a></li>
+<li>📄 <a href="hla-system-properties-configure-single.md">hla-system-properties-configure-single.md</a></li>
+<li>📄 <a href="hla-system-properties-configure.md">hla-system-properties-configure.md</a></li>
+<li>📄 <a href="hla-timestamp-formats-add.md">hla-timestamp-formats-add.md</a></li>
+<li>📄 <a href="hla-understanding.md">hla-understanding.md</a></li>
+<li>📄 <a href="hla-use-case-syslogs.md">hla-use-case-syslogs.md</a></li>
+<li>📄 <a href="hla-view-source-type-patterns.md">hla-view-source-type-patterns.md</a></li>
+<li>📄 <a href="hla-view-sources-vs-sourcetypes.md">hla-view-sources-vs-sourcetypes.md</a></li>
+<li>📄 <a href="il-connector-hla-activate-draft.md">il-connector-hla-activate-draft.md</a></li>
+<li>📄 <a href="il-connector-hla-aws-cloudwatch.md">il-connector-hla-aws-cloudwatch.md</a></li>
+<li>📄 <a href="il-connector-hla-aws-s3-fields.md">il-connector-hla-aws-s3-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-aws-s3.md">il-connector-hla-aws-s3.md</a></li>
+<li>📄 <a href="il-connector-hla-azure-la-fields.md">il-connector-hla-azure-la-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-azure-la.md">il-connector-hla-azure-la.md</a></li>
+<li>📄 <a href="il-connector-hla-cloudwatch-fields.md">il-connector-hla-cloudwatch-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-deactivate.md">il-connector-hla-deactivate.md</a></li>
+<li>📄 <a href="il-connector-hla-edit.md">il-connector-hla-edit.md</a></li>
+<li>📄 <a href="il-connector-hla-elastic-fields.md">il-connector-hla-elastic-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-elasticsearch.md">il-connector-hla-elasticsearch.md</a></li>
+<li>📄 <a href="il-connector-hla-event-hubs-fields.md">il-connector-hla-event-hubs-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-event-hubs.md">il-connector-hla-event-hubs.md</a></li>
+<li>📄 <a href="il-connector-hla-firehose-fields.md">il-connector-hla-firehose-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-firehose.md">il-connector-hla-firehose.md</a></li>
+<li>📄 <a href="il-connector-hla-gcp-pubsub-fields.md">il-connector-hla-gcp-pubsub-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-gcp-pubsub.md">il-connector-hla-gcp-pubsub.md</a></li>
+<li>📄 <a href="il-connector-hla-glide-syslog.md">il-connector-hla-glide-syslog.md</a></li>
+<li>📄 <a href="il-connector-hla-glidesyslog-fields.md">il-connector-hla-glidesyslog-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-kafka-fields.md">il-connector-hla-kafka-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-kafka.md">il-connector-hla-kafka.md</a></li>
+<li>📄 <a href="il-connector-hla-log-context-mapping.md">il-connector-hla-log-context-mapping.md</a></li>
+<li>📄 <a href="il-connector-hla-map-business-context.md">il-connector-hla-map-business-context.md</a></li>
+<li>📄 <a href="il-connector-hla-mid-fields.md">il-connector-hla-mid-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-mid.md">il-connector-hla-mid.md</a></li>
+<li>📄 <a href="il-connector-hla-rest-api.md">il-connector-hla-rest-api.md</a></li>
+<li>📄 <a href="il-connector-hla-restapi-fields.md">il-connector-hla-restapi-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-splunk-polling.md">il-connector-hla-splunk-polling.md</a></li>
+<li>📄 <a href="il-connector-hla-splunkpoll-fields.md">il-connector-hla-splunkpoll-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-splunktcp-fields.md">il-connector-hla-splunktcp-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-splunktcp.md">il-connector-hla-splunktcp.md</a></li>
+<li>📄 <a href="il-connector-hla-splunkudp-fields.md">il-connector-hla-splunkudp-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-splunkudp.md">il-connector-hla-splunkudp.md</a></li>
+<li>📄 <a href="il-connector-hla-tcp-fields.md">il-connector-hla-tcp-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-tcp.md">il-connector-hla-tcp.md</a></li>
+<li>📄 <a href="il-connector-hla-udp-fields.md">il-connector-hla-udp-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-udp.md">il-connector-hla-udp.md</a></li>
+<li>📄 <a href="il-connector-hla-vector-fields.md">il-connector-hla-vector-fields.md</a></li>
+<li>📄 <a href="il-connector-hla-vector.md">il-connector-hla-vector.md</a></li>
+<li>📄 <a href="il-connector-overview-tab.md">il-connector-overview-tab.md</a></li>
+<li>📄 <a href="install-health-log-analytics.md">install-health-log-analytics.md</a></li>
+    </ul>
+</body>
+</html>
